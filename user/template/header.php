@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 session_start();
 include '../config/koneksi.php';
   if(isset($_SESSION['user'])){
@@ -11,7 +11,7 @@ include '../config/koneksi.php';
     header("location:../index.php");
   }
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html>
@@ -34,6 +34,12 @@ include '../config/koneksi.php';
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../assets/dist/css/skins/_all-skins.min.css">
+
+  <style>
+    .warna {
+      color: #FFFFFF;
+    }
+  </style>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
