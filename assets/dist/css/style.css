@@ -1,0 +1,8 @@
+html {
+	background-image: url(image.jpg);
+}
+
+.alert-login {
+  width: 360px;
+  margin: 7% auto;
+}
