@@ -1,46 +1,3 @@
-<?php
-//set session untuk username yang logi
-session_start();
-include '../config/koneksi.php';
-// if(isset($_SESSION['username'])){
-// }
-if(isset($_SESSION['user'])){
-  $session = $_SESSION['user'];
-  $query   = mysqli_query($connect, "SELECT * FROM user WHERE id ='$session'") or die (mysql_error());
-  $data    = mysqli_fetch_array($query);
-}
-else{
-  header("location:../index.php");
-}
-
-//set session untuk timer soal 
-//set session dulu dengan nama $_SESSION["mulai"]
-    if (isset($_SESSION["mulai1"])) { 
-        //jika session sudah ada
-        $telah_berlalu = time() - $_SESSION["mulai1"];
-    } else { 
-        //jika session belum ada
-        $_SESSION["mulai1"]  = time();
-        $telah_berlalu      = 0;
-    } 
-    
-    //ubah waktu disini
-    $temp_waktu = (10*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
-    $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
-    $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
-     
-    if ($temp_menit < 60) { 
-        /* Apabila $temp_menit yang kurang dari 60 menit */
-        $jam    = 0; 
-        $menit  = $temp_menit; 
-        $detik  = $temp_detik; 
-    } else { 
-        /* Apabila $temp_menit lebih dari 60 menit */           
-        $jam    = (int)($temp_menit/60);    //$temp_menit dijadikan jam dengan dibagi 60 dan dibulatkan menjadi integer 
-        $menit  = $temp_menit%60;           //$temp_menit diambil sisa bagi ($temp_menit%60) untuk menjadi menit
-        $detik  = $temp_detik;
-    }   
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,7 +88,7 @@ else{
     <div class="col-md-9">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal text-center">Subtest 1</h4>
+          <h4 class="my-0 font-weight-normal text-center">Subtest 3</h4>
         </div>
         <div class="card-body">
           <form action="hasil_la_mp.php" id="frmSoal" method='POST' > 
@@ -139,9 +96,9 @@ else{
               <div class="tab-content">
                 <?php
                   // include '../koneksi.php'; 
-                  // include '../config/koneksi.php';                    
+                  include '../config/koneksi.php';                    
                   // $query = "SELECT * FROM tbsoal limit 5";
-                  $query = "SELECT * FROM soal1 order by id ASC";
+                  $query = "SELECT * FROM soal3 order by id ASC";
                   $hasil = mysqli_query($connect, $query);
                   $nomor = 1;
                   while($row = mysqli_fetch_array($hasil)){
@@ -155,25 +112,53 @@ else{
                       <!-- class="tab-pane" id="<?php echo $nomor; ?>"               -->
                   <div >
                     <div class="col-md-12 ">
-                      <table>
+
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
+                          </div>
+                          <div class="col-md-4">
+                            <h1 class="lead"><?php echo $soal; ?></h1>
+                          </div>
+                           <div class="col-md-3">
+                            <div class="form-group">
+                              <!-- <label for="exampleInputEmail1">Email address</label> -->
+                              <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Angka 1, Angka 2">
+                            </div>
+                          </div>
+                         <!--  <td>
+                            <h1 class="lead"><?php echo $soal; ?></h1>
+                          </td> -->
+                        </div>
+                      
+                      <!-- <table>
                         <tr>
-                          <td class="align-text-top">
+                          <td class="align-text-center">
                             <input type="hidden" name="id[]" value="<?php echo $id; ?>">
                             <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
                           </td>
                           <td>
                             <h1 class="lead"><?php echo $soal; ?></h1>
                           </td>
-                        </tr>
-                      </table>
-                        </br>
+                          <td>
+                            <div class="form-group"> -->
+                              <!-- <label for="exampleInputEmail1">Email address</label> -->
+                         <!--      <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Angka 1, Angka 2">
+                            </div>
+                          </td> -->
+                         <!--  <td>
+                            <h1 class="lead"><?php echo $soal; ?></h1>
+                          </td> -->
+                      <!--   </tr>
+                      </table> -->
 
-                        <tr>
-                        <div class="form-group">
+                       <!--  <tr>
+                        <div class="form-group"> -->
                           <!-- <label for="exampleInputEmail1">Email address</label> -->
-                          <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
+                          <!-- <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
                         </div>
-                        </tr>
+                        </tr> -->
 
                         <!-- <tr>
                         <div class="animated-radio-button">
@@ -246,7 +231,7 @@ else{
             <li>Help center access</li>
           </ul> -->
           <div class="float-right mr-md-5 mb-3">
-            <a href="mulaisoal2.php" class="btn btn-md btn-primary text-center">Next</a>
+            <button type="button" class="btn btn-md btn-primary text-center">Next</button>
           </div>
           <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button></center> -->
         </div>
@@ -403,7 +388,7 @@ else{
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
                              var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal2.php'; 
+                             alert('Maaf, Waktu pengerjaan untuk soal ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal3.php'; 
                         }
                       } 
                   } 

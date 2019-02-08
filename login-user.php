@@ -14,7 +14,7 @@
       if( $row >  0) {
         $_SESSION['user'] = $session;
 
-        header("location:user/index.php");
+        header("location:pricing/index.php");
 
       }else{
         
