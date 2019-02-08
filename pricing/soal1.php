@@ -15,15 +15,16 @@ else{
 
 //set session untuk timer soal 
 //set session dulu dengan nama $_SESSION["mulai"]
-    if (isset($_SESSION["mulai2"])) { 
+    if (isset($_SESSION["mulai1"])) { 
         //jika session sudah ada
-        $telah_berlalu = time() - $_SESSION["mulai2"];
+        $telah_berlalu = time() - $_SESSION["mulai1"];
     } else { 
         //jika session belum ada
-        $_SESSION["mulai2"]  = time();
+        $_SESSION["mulai1"]  = time();
         $telah_berlalu      = 0;
     } 
- 
+    
+    //ubah waktu disini
     $temp_waktu = (1*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
@@ -130,7 +131,7 @@ else{
     <div class="col-md-9">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal text-center">Subtest 2</h4>
+          <h4 class="my-0 font-weight-normal text-center">Subtest 1</h4>
         </div>
         <div class="card-body">
           <form action="hasil_la_mp.php" id="frmSoal" method='POST' > 
@@ -140,7 +141,7 @@ else{
                   // include '../koneksi.php'; 
                   // include '../config/koneksi.php';                    
                   // $query = "SELECT * FROM tbsoal limit 5";
-                  $query = "SELECT * FROM soal2 order by id ASC";
+                  $query = "SELECT * FROM soal1 order by id ASC";
                   $hasil = mysqli_query($connect, $query);
                   $nomor = 1;
                   while($row = mysqli_fetch_array($hasil)){
@@ -165,15 +166,16 @@ else{
                           </td>
                         </tr>
                       </table>
-
-                        <!-- <tr>
-                        <div class="form-group"> -->
-                          <!-- <label for="exampleInputEmail1">Email address</label> -->
-                          <!-- <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
-                        </div>
-                        </tr> -->
+                        </br>
 
                         <tr>
+                        <div class="form-group">
+                          <!-- <label for="exampleInputEmail1">Email address</label> -->
+                          <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
+                        </div>
+                        </tr>
+
+                        <!-- <tr>
                         <div class="animated-radio-button">
                           <label>
                             <input type="radio" name="pilihan[<?php echo $id;?>]" value="A">
@@ -208,7 +210,7 @@ else{
                             <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;<?php echo $pilihan_d; ?></span>
                           </label>
                         </div>
-                        </tr>
+                        </tr> -->
                       </table></br>
                     </div>
                   </div>
@@ -244,7 +246,7 @@ else{
             <li>Help center access</li>
           </ul> -->
           <div class="float-right mr-md-5 mb-3">
-            <button type="button" class="btn btn-md btn-primary text-center">Next</button>
+            <a href="mulaisoal2.php" class="btn btn-md btn-primary text-center">Next</a>
           </div>
           <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button></center> -->
         </div>
@@ -401,7 +403,7 @@ else{
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
                              var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'index.php'; 
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'index.php'; 
                         }
                       } 
                   } 

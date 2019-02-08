@@ -121,7 +121,7 @@
                           <div class="col-md-4">
                             <h1 class="lead"><?php echo $soal; ?></h1>
                           </div>
-                           <div class="col-md-3">
+                          <div class="col-md-3">
                             <div class="form-group">
                               <!-- <label for="exampleInputEmail1">Email address</label> -->
                               <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Angka 1, Angka 2">
@@ -274,7 +274,7 @@
     <div class="row">
       <div class="col-12 col-md">
         <img class="mb-2" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-        <small class="d-block mb-3 text-muted">&copy; 2018-2019</small>
+        <small class="d-block mb-3 pl-5 text-muted">&copy; 2018-2019</small>
       </div>
       <div class="col-6 col-md">
         <h5>Features</h5>
@@ -388,7 +388,7 @@
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
                              var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal3.php'; 
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest ketiga ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'index.php'; 
                         }
                       } 
                   } 
