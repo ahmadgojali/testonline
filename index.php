@@ -1,97 +1,46 @@
-<?php include 'template/header.php'; ?>
-
-  <div class="content-wrapper login-page">
-    <div class="container">
-      <!-- Content Header (Page header) -->
-     <!--  <section class="content-header">
-        <h1>
-          Tes Online
-          <small></small>
-        </h1>
-        <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li><a href="#">Layout</a></li>
-          <li class="active">Top Navigation</li>
-        </ol>
-      </section> -->
-
-      <!-- Main content -->
-      <section class="content">
-        <!-- <div class="row">
-            <div class="col-md-5">
-              <?php 
-              if(isset($_GET['action'])){
-                if($_GET['action'] == "gagal"){
-                 echo "<div class='alert alert-warning alert-dismissible'>
-                  <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                      Login gagal, masukkan username dan password anda dengan benar
-                      <br />
-                  </div>";
-               }
-              }
-              ?>
-            </div>
-        </div> -->
-       
-         <div class="row">
-           <div class="col">
-              <div class="login-box">
-                <div class="login-logo">
-                  <a href="#"><b>Asesmen</b> Online</a>
-                </div>
-                <!-- /.login-logo -->
-                <div class="login-box-body">
-                  <p class="login-box-msg">Sign in to start your session</p>
-
-                  <form action="login-user.php" method="post" enctype="multipart/form-data">
-                    <div class="form-group has-feedback">
-                      <input type="text" name="username" class="form-control" placeholder="Username">
-                      <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                    </div>
-                    <div class="form-group has-feedback">
-                      <input type="password" name="password" class="form-control" placeholder="Password">
-                      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-8">
-                        <div class="checkbox icheck">
-                          <label>
-                            <input type="checkbox"> Remember Me
-                          </label>
-                        </div>
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-xs-4">
-                        <button type="submit" name="login" class="btn btn-primary btn-block btn-flat">Sign In</button>
-                      </div>
-                      <!-- /.col -->
-                    </div>
-                  </form>
-
-                  <div class="social-auth-links text-center">
-                    <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
-                      Facebook</a>
-                    <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
-                      Google+</a>
-                  </div>
-                  <!-- /.social-auth-links -->
-
-                  <a href="#">I forgot my password</a><br>
-                  <a href="register.html" class="text-center">Register a new membership</a>
-
-                </div>
-                <!-- /.login-box-body -->
-              </div>
-              <!-- /.login-box -->
-           </div>
-         </div>
-        <!-- /.box -->
-      </section>
-      <!-- /.content -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.content-wrapper -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arwana Citramulia</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   
-  <?php include 'template/footer.php'; ?>
+  <!-- <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+  
+  <link rel="stylesheet" href="assets/dist/signin.css">
+  <!-- <link rel="stylesheet" href="signin.css"> -->
+</head>
+<body>
+
+  <form class="form-signin" action="login-user.php" method="post" enctype="multipart/form-data">
+    <center>
+      <img class="mb-4" src="assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
+    </center>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="text" name="username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Login</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+  </form>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="assets/dist/jquery-3.3.1.min.js"></script>
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+  <script src="assets/dist/popper.min.js"></script>
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+  <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="assets/dist/jquery.bootstrap.wizard.js"></script>
+
+
+</body>
+</html>

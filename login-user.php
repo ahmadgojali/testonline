@@ -12,9 +12,25 @@
       $row      = mysqli_num_rows($hasil);
       
       if( $row >  0) {
+
+        $percobaan = mysqli_query($connect, "SELECT * FROM user where jumlah_masuk = 0 and id = $data[id]");
+        // $data2     = mysqli_fetch_array($hasil);
+        $row2     = mysqli_num_rows($percobaan);
+
+        if ($row2 > 0) {
+
+        // $query = mysqli_query($connect, "UPDATE user SET jumlah_masuk = 1 WHERE id = $data[id]");
+
         $_SESSION['user'] = $session;
 
         header("location:pricing/index.php");
+
+        }
+
+        else {
+          echo "<script language='javascript'>window.alert('Maaf, Anda sudah pernah login sebelumnya.'), window.location = 'index.php';</script>"; 
+        }
+
 
       }else{
         
