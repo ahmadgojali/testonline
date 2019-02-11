@@ -2,8 +2,12 @@
 session_start();
 include '../config/koneksi.php';
 
-    $kd_soal = $_POST['id'];
-    $pilihan = $_POST['pilihan'];
+ // if (isset($_POST['submit'])) {
+    
+    // var_dump($_POST);
+
+    $kd_soal = $_POST["id"];
+    $pilihan = $_POST["pilihan"];
 
     $query = ("SELECT * from soal2");
 
@@ -47,32 +51,37 @@ include '../config/koneksi.php';
             
         } 
        
-        $score = 100/$jml_soal * $benar;
+        $score = round(100/$jml_soal * $benar);
         $nilai = $score;
     }
 
+// var_dump('nilai', $nilai);
+// var_dump('benar', $benar);
+// var_dump('salah', $salah);
+// var_dump('jumlah', $jml_soal);
     if(isset($_SESSION['user'])){
 	    $session = $_SESSION['user'];
-	    $query   = mysqli_query($connect, "SELECT * FROM jawaban_tes2 WHERE id_user ='$session'") or die (mysql_error());
+	    $query   = mysqli_query($connect, "SELECT * FROM jwb_soal2 WHERE id_user ='$session'") or die (mysql_error());
 	    $data    = mysqli_fetch_array($query);
   		
   		if ($data['id_user'] == $session){
-  			$query = ("UPDATE jawaban_tes2 SET nilai='".$nilai."' WHERE id_user='".$session."'");
+  			$query = ("UPDATE jwb_soal2 SET nilai='".$nilai."' WHERE id_user='".$session."'");
   			$hasil = mysqli_query($connect, $query);
 
   			
 
   			header("location:mulaisoal3.php");
-  			var_dump($hasil);
+  			// var_dump($hasil);
   		}
 
   		else {
-  			$query = ("INSERT INTO jawaban_tes2 (id_user, nilai) VALUES ($session, $nilai)");
+  			$query = ("INSERT INTO jwb_soal2 (id_user, nilai) VALUES ($session, $nilai)");
   			$hasil = mysqli_query($connect, $query);
 
 
   			header("location:mulaisoal3.php");
-  			var_dump($hasil);
+  			// var_dump($hasil);
   		}
   	}
+  
 ?>

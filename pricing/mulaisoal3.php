@@ -102,7 +102,8 @@ include '../config/koneksi.php';
                    <?php
                    echo "
                         <h4 align='justyfy'>Jawaban Benar</td><td> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;$benar </h4> </br>
-                        <h4 align='justyfy'>Jawaban Salah</td><td> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;$salah </h4> </br>"    
+                        <h4 align='justyfy'>Jawaban Salah</td><td> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;$salah </h4> </br> 
+                        <h4 align='justyfy'>Jumlah Soal</td><td> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;$jml_soal </h4> </br>"   
                       ?>
                       </div>      
                   </div>

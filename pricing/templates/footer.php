@@ -44,6 +44,11 @@
   </div>
 </div>
 
+<!-- Scroll to Top Button-->
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-circle-up fa-lg"></i>
+  <span class="glyphicon glyphicon-chevron-up"></span>
+</a>
+
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
  <script src="../assets/dist/jquery-3.3.1.min.js"></script>
 
@@ -52,6 +57,7 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <!-- <script src="../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<script src="../assets/dist/bootstrap/js/bootstrap.min.js"></script>
 
 <script src="../assets/dist/jquery.bootstrap.wizard.js"></script>
 
@@ -65,4 +71,28 @@
         increaseArea: '20%' // optional
       });
     });
+  </script>
+
+  <!-- back-to-top -->
+  <script>
+  $(document).ready(function(){
+   $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+              $('#back-to-top').fadeIn();
+          } else {
+              $('#back-to-top').fadeOut();
+          }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+          $('#back-to-top').tooltip('hide');
+          $('body,html').animate({
+              scrollTop: 0
+          }, 800);
+          return false;
+      });
+      
+      $('#back-to-top').tooltip('show');
+
+  });
   </script>

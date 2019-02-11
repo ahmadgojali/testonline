@@ -39,49 +39,13 @@ else{
         $menit  = $temp_menit%60;           //$temp_menit diambil sisa bagi ($temp_menit%60) untuk menjadi menit
         $detik  = $temp_detik;
     }   
+
 ?>
 
 <?php include 'templates/header.php'; ?>
 
 <?php include 'templates/navbar.php'; ?>
 
-<!-- <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Psikotes Online</h1>
-  <p class="lead">Selamat datang di sistem psikotes online dari Arwana Citramulia Tbk .</p>
-</div> -->
-
-<!-- <div class="container"> -->
-  <!-- nomor pagination -->
-  <!-- <div class="row"> -->
-    <!-- col-ke-1 -->
-    <!-- <div class="col-md-3">
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Radio
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Radio
-        </label>
-      </div>
-    </div> -->
-    <!-- col ke 2 -->
-    <!-- <div class="col-md-9">
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Radio
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Radio
-        </label>
-      </div>
-    </div> -->
-  <!-- </div> -->
   <div class="card-deck  px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <!-- timer -->
      <div class="col-md-3">
@@ -91,18 +55,10 @@ else{
         </div>
         <div class="card-body">
           <div class="panel-body">
-            <div align="left" style="padding-left: 5px; padding-right:1px;">
+            <div class="text-center">
               <div id='timer'></div>
             </div>      
           </div>
-          <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
-          <!-- <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul> -->
-          <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Setuju dan Lanjutkan</button></center> -->
         </div>
       </div>
     </div>
@@ -114,87 +70,82 @@ else{
         </div>
         <div class="card-body">
           <form action="simpan-soal2.php" id="frmSoal" method='POST' > 
-            <div style="padding-left: 30px; padding-right:30px;">
-              <div class="tab-content">
-                <?php
-                  // include '../koneksi.php'; 
-                  // include '../config/koneksi.php';                    
-                  // $query = "SELECT * FROM tbsoal limit 5";
-                  $query = "SELECT * FROM soal2 order by id ASC";
-                  $hasil = mysqli_query($connect, $query);
-                  $nomor = 1;
-                  while($row = mysqli_fetch_array($hasil)){
-                  $id        = $row["id"];
-                  $soal      = $row["soal"];
-                  $pilihan_a = $row["pilihan_a"];
-                  $pilihan_b = $row["pilihan_b"];
-                  $pilihan_c = $row["pilihan_c"];
-                  $pilihan_d = $row["pilihan_d"]; 
-                  // $jawaban   = $row["jawaban"];                    
-                ?>
-                      <!-- class="tab-pane" id="<?php echo $nomor; ?>"               -->
-                  <div >
-                    <div class="col-md-12 ">
-                      <table>
-                        <tr>
-                          <td class="align-text-top">
-                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
-                            <!-- <input type="hidden" name="jawaban[<?php echo $id; ?>]" value="<?php echo $jawaban; ?>"> -->
-                            <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
-                          </td>
-                          <td>
-                            <h1 class="lead"><?php echo $soal; ?></h1>
-                          </td>
-                        </tr>
-                      </table>
+            <?php
+             
+              $query = "SELECT * FROM soal2 order by id ASC";
+              $hasil = mysqli_query($connect, $query);
+              $nomor = 1;
+              while($row = mysqli_fetch_array($hasil)){
+              $id        = $row["id"];
+              $soal      = $row["soal"];
+              $pilihan_a = $row["pilihan_a"];
+              $pilihan_b = $row["pilihan_b"];
+              $pilihan_c = $row["pilihan_c"];
+              $pilihan_d = $row["pilihan_d"]; 
+              // $jawaban   = $row["jawaban"];                    
+            ?>
+            <div class="row">
+              <div class="col-md-12 ml-5">
+                <table>
+                  <tr>
+                    <td class="align-text-top">
+                      <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                      <!-- <input type="hidden" name="jawaban[<?php echo $id; ?>]" value="<?php echo $jawaban; ?>"> -->
+                      <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
+                    </td>
+                    <td>
+                      <h1 class="lead"><?php echo $soal; ?></h1>
+                    </td>
+                  </tr>
+                </table>
 
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="A" class="icek">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;A. &nbsp;<?php echo $pilihan_a; ?></span>
+                  <tr>
+                  <div class="ml-4">
+                    <label>
+                      <input type="radio" name="pilihan[<?php echo $id;?>]" value="A" class="icek">
+                      <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;A. &nbsp;<?php echo $pilihan_a; ?></span>
 
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="B" class="icek">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;B. &nbsp;<?php echo $pilihan_b; ?></span>
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="C" class="icek">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;C. &nbsp;<?php echo $pilihan_c; ?></span>
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="D" class="icek">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;<?php echo $pilihan_d; ?></span>
-                          </label>
-                        </div>
-                        </tr>
-                      </table></br>
-                    </div>
+                    </label>
                   </div>
-                   <?php
-                   $nomor++;
-                   }
-                   ?> 
+                  </tr>
+
+                  <tr>
+                  <div class="ml-4">
+                    <label>
+                      <input type="radio" name="pilihan[<?php echo $id;?>]" value="B" class="icek">
+                      <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;B. &nbsp;<?php echo $pilihan_b; ?></span>
+                    </label>
+                  </div>
+                  </tr>
+
+                  <tr>
+                  <div class="ml-4">
+                    <label>
+                      <input type="radio" name="pilihan[<?php echo $id;?>]" value="C" class="icek">
+                      <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;C. &nbsp;<?php echo $pilihan_c; ?></span>
+                    </label>
+                  </div>
+                  </tr>
+
+                  <tr>
+                  <div class="ml-4">
+                    <label>
+                      <input type="radio" name="pilihan[<?php echo $id;?>]" value="D" class="icek">
+                      <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;<?php echo $pilihan_d; ?></span>
+                    </label>
+                  </div>
+                  </tr>
               </div>
             </div>
+            
+             <?php
+             $nomor++;
+             }
+             ?> 
+              
             <div class="float-right mr-md-5 mb-3">
-              <a href="simpan-soal2.php">simpan</a>
+              <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan"></button>
+              <!-- <button type="submit" name="submit" class="btn btn-success "><i class="fa fa-key"></i>&nbsp;Login</button> -->
             </div>
           </form>
         </div>
@@ -277,7 +228,8 @@ else{
                           if(jam < 0) {
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
-                             var frmSoal = document.getElementById("frmSoal"); 
+                             var frmSoal = document.getElementById("frmSoal");
+                             // frmSoal.submit(); 
                              alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'simpan-soal2.php'; 
                         }
                       } 
