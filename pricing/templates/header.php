@@ -11,5 +11,8 @@
 
   <!-- <link rel="stylesheet" href="pricing.css"> -->
   <!-- <link rel="stylesheet" href="sigin.css"> -->
+  
+<!-- icheck -->
+<link href="../assets/dist/icheck/skins/all.css?v=1.0.2" rel="stylesheet">
 </head>
 <body>

@@ -1,11 +1,11 @@
-  <div class="container">
+  <!-- <div class="container"> -->
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
-        <div class="col-12 col-md">
-          <img class="mb-2" src="../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-          <small class="d-block mb-3 text-muted">&copy; 2018-2019</small>
+        <div class="col-12 col-md text-center">
+          <img class="mb-2" src="../assets/img/logo.png" alt="" width="30" height="30">
+          <h6 class="d-block mb-3 text-muted">Copyright © 2019 PT Arwana Citramulia TBK. All Rights Reserved.</h6>
         </div>
-        <div class="col-6 col-md">
+        <!-- <div class="col-6 col-md">
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="#">Cool stuff</a></li>
@@ -17,23 +17,27 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Resources</h5>
+          <h5>About</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="#">Resource</a></li>
             <li><a class="text-muted" href="#">Resource name</a></li>
             <li><a class="text-muted" href="#">Another resource</a></li>
             <li><a class="text-muted" href="#">Final resource</a></li>
           </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
+        </div> -->
+    <!--     <div class="col-12 col-md text-center">
+          <h5>Contact</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
+            <li><a class="text-muted" href="#">PT ARWANA CITRAMULIA TBK</a></li>
+            <li><a class="text-muted" href="#">SENTRA NIAGA PURI INDAH BLOK T2 NO. 24,</a></li>
+            <li><a class="text-muted" href="#">KEMBANGAN SELATAN, JAKARTA 11610</a></li>
+            <li><a class="text-muted" href="#">PHONE   : +62-21-58302363</a></li>
+            <li><a class="text-muted" href="#">FAX     : +62-21-58302361</a></li>
+            <li><a class="text-muted" href="#">EMAIL   :  INVESTOR@ARWANACITRA.COM</a></li>
+            </li>
           </ul>
-        </div>
+   
+        </div> -->
       </div>
     </footer>
   <!-- container end -->
@@ -50,3 +54,15 @@
 <!-- <script src="../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
 <script src="../assets/dist/jquery.bootstrap.wizard.js"></script>
+
+<!-- icheck -->
+  <script src="../assets/dist/icheck/js/icheck.js?v=1.0.2"></script>
+  <script>
+    $(document).ready(function(){
+      $('.icek').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green',
+        increaseArea: '20%' // optional
+      });
+    });
+  </script>

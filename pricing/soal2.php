@@ -110,10 +110,10 @@ else{
     <div class="col-md-9">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal text-center">Subtest 2</h4>
+          <h4 class="my-0 font-weight-normal text-center">Tes Arwana Subtest II</h4>
         </div>
         <div class="card-body">
-          <form action="hasil_la_mp.php" id="frmSoal" method='POST' > 
+          <form action="simpan-soal2.php" id="frmSoal" method='POST' > 
             <div style="padding-left: 30px; padding-right:30px;">
               <div class="tab-content">
                 <?php
@@ -124,12 +124,13 @@ else{
                   $hasil = mysqli_query($connect, $query);
                   $nomor = 1;
                   while($row = mysqli_fetch_array($hasil)){
-                  $id   = $row["id"];
+                  $id        = $row["id"];
                   $soal      = $row["soal"];
-                  $pilihan_a = $row["A"];
-                  $pilihan_b = $row["B"];
-                  $pilihan_c = $row["C"];
-                  $pilihan_d = $row["D"];                     
+                  $pilihan_a = $row["pilihan_a"];
+                  $pilihan_b = $row["pilihan_b"];
+                  $pilihan_c = $row["pilihan_c"];
+                  $pilihan_d = $row["pilihan_d"]; 
+                  // $jawaban   = $row["jawaban"];                    
                 ?>
                       <!-- class="tab-pane" id="<?php echo $nomor; ?>"               -->
                   <div >
@@ -138,6 +139,7 @@ else{
                         <tr>
                           <td class="align-text-top">
                             <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <!-- <input type="hidden" name="jawaban[<?php echo $id; ?>]" value="<?php echo $jawaban; ?>"> -->
                             <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
                           </td>
                           <td>
@@ -146,17 +148,10 @@ else{
                         </tr>
                       </table>
 
-                        <!-- <tr>
-                        <div class="form-group"> -->
-                          <!-- <label for="exampleInputEmail1">Email address</label> -->
-                          <!-- <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
-                        </div>
-                        </tr> -->
-
                         <tr>
                         <div class="animated-radio-button">
                           <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="A">
+                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="A" class="icek">
                             <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;A. &nbsp;<?php echo $pilihan_a; ?></span>
 
                           </label>
@@ -166,7 +161,7 @@ else{
                         <tr>
                         <div class="animated-radio-button">
                           <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="B">
+                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="B" class="icek">
                             <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;B. &nbsp;<?php echo $pilihan_b; ?></span>
                           </label>
                         </div>
@@ -175,7 +170,7 @@ else{
                         <tr>
                         <div class="animated-radio-button">
                           <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="C">
+                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="C" class="icek">
                             <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;C. &nbsp;<?php echo $pilihan_c; ?></span>
                           </label>
                         </div>
@@ -184,7 +179,7 @@ else{
                         <tr>
                         <div class="animated-radio-button">
                           <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="D">
+                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="D" class="icek">
                             <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;<?php echo $pilihan_d; ?></span>
                           </label>
                         </div>
@@ -196,71 +191,15 @@ else{
                    $nomor++;
                    }
                    ?> 
-
-                       <!-- <?php var_dump($id) ?>
-                       <?php var_dump($soal) ?>
-                       <?php var_dump($pilihan_a) ?>
-                       <?php var_dump($pilihan_b) ?>
-                       <?php var_dump($pilihan_c) ?>
-                       <?php var_dump($pilihan_d) ?> -->
-                
-                <!-- <ul class="pager wizard">
-                  <li class="previous"><a href="javascript:;">Previous</a></li>                             
-                    <li class="next"><a href="javascript:;">Next</a></li>
-                  <li class="finish" onclick="return confirm('Anda yakin dengan jawaban anda ?')">
-                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success">
-                  </li> 
-                </ul> -->
-                
-                <!-- <button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button> -->
               </div>
             </div>
-          </form>   
-          <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
-         <!--  <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul> -->
-          <div class="float-right mr-md-5 mb-3">
-            <button type="button" class="btn btn-md btn-primary text-center">Next</button>
-          </div>
-          <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button></center> -->
+            <div class="float-right mr-md-5 mb-3">
+              <a href="simpan-soal2.php">simpan</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-
-    <!-- <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Pro</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>20 users included</li>
-          <li>10 GB of storage</li>
-          <li>Priority email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-      </div>
-    </div> -->
-    <!-- <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Enterprise</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>30 users included</li>
-          <li>15 GB of storage</li>
-          <li>Phone and email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-      </div>
-    </div> -->
   </div>
 
 <?php include 'templates/footer.php'; ?>
@@ -339,7 +278,7 @@ else{
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
                              var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'index.php'; 
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'simpan-soal2.php'; 
                         }
                       } 
                   } 

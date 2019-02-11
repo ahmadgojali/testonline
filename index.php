@@ -14,7 +14,7 @@
 
   <form class="form-signin" action="login-user.php" method="post" enctype="multipart/form-data">
     <center>
-      <img class="mb-4" src="assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <img class="mb-4" src="assets/img/logo.png" alt="" width="200px" height="100px">
       <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
     </center>
     <label for="inputEmail" class="sr-only">Email address</label>

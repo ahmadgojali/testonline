@@ -112,7 +112,7 @@ else{
     <div class="col-md-9">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal text-center">Subtest 1</h4>
+          <h4 class="my-0 font-weight-normal text-center">Sub Test 1 ( Tes Matematika Dasar )</h4>
         </div>
         <div class="card-body">
           <form action="hasil_la_mp.php" id="frmSoal" method='POST' > 
@@ -227,7 +227,7 @@ else{
             <li>Help center access</li>
           </ul> -->
           <div class="float-right mr-md-5 mb-3">
-            <a href="mulaisoal2.php" class="btn btn-md btn-primary text-center">Next</a>
+            <!-- <a href="#" class="btn btn-md btn-primary text-center">Next</a> -->
           </div>
           <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button></center> -->
         </div>
@@ -342,7 +342,7 @@ else{
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
                              var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'index.php'; 
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal2.php'; 
                         }
                       } 
                   } 

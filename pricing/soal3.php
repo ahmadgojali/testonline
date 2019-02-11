@@ -1,3 +1,4 @@
+
 <?php include 'templates/header.php'; ?>
 
 <?php include 'templates/navbar.php'; ?>
@@ -68,29 +69,814 @@
     <div class="col-md-9">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal text-center">Subtest 3</h4>
+          <h4 class="my-0 font-weight-normal text-center">Sub Test 3 ( Tes Deret Angka )</h4>
         </div>
         <div class="card-body">
           <form action="hasil_la_mp.php" id="frmSoal" method='POST' > 
             <div style="padding-left: 30px; padding-right:30px;">
               <div class="tab-content">
                 <?php
-                  // include '../koneksi.php'; 
-                  include '../config/koneksi.php';                    
-                  // $query = "SELECT * FROM tbsoal limit 5";
-                  $query = "SELECT * FROM soal3 order by id ASC";
-                  $hasil = mysqli_query($connect, $query);
-                  $nomor = 1;
-                  while($row = mysqli_fetch_array($hasil)){
-                  $id   = $row["id"];
-                  $soal      = $row["soal"];
+                  // // include '../koneksi.php'; 
+                  // include '../config/koneksi.php';                    
+                  // // $query = "SELECT * FROM tbsoal limit 5";
+                  // $query = "SELECT * FROM soal3 order by id ASC";
+                  // $hasil = mysqli_query($connect, $query);
+                  // $nomor = 1;
+                  // while($row = mysqli_fetch_array($hasil)){
+                  // $id   = $row["id"];
+                  // $soal      = $row["soal"];
                   // $pilihan_a = $row["A"];
                   // $pilihan_b = $row["B"];
                   // $pilihan_c = $row["C"];
                   // $pilihan_d = $row["D"];                     
                 ?>
-                      <!-- class="tab-pane" id="<?php echo $nomor; ?>"               -->
                   <div >
+                    <div class="col-md-12 ">
+
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">1.</h1>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-md-2 text-center"><button type="button" class="btn btn-success">2</button></div>
+                              <div class="col-md-2 text-center"><button type="button" class="btn btn-success">3</button></div>
+                              <div class="col-md-2 text-center"><button type="button" class="btn btn-success">4</button></div>
+                              <div class="col-md-2 text-center"><button type="button" class="btn btn-success">5</button></div>
+                              <div class="col-md-2 text-center"><button type="button" class="btn btn-success">6</button></div>
+                              <div class="col-md-2 text-center"><button type="button" class="btn btn-success">7</button></div>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb1_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb1_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">2.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">20</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">22</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">24</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">26</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">28</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">30</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb2_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb2_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">3.</h1>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">30</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">27</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">24</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">21</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">19</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">16</button></div>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb3_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb3_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                      
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">4.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">7</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">14</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">28</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">46</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">92</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">184</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb4_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb4_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">5.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">7</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">12</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">14</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">11</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">16</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb5_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb5_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">6.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">4</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">16</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">23</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">31</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">40</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb6_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb6_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">7.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">18</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">11</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">20</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">13</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">21</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb7_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb7_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">8.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">64</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">32</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">16</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">8</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">4</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">2</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb8_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb8_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">9.</h1>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">69</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">61</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">52</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">42</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">31</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">19</button></div>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb9_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb9_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">10.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">22</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">27</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">108</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">113</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">452</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">457</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb10_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb10_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">11.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">25</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">50</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">100</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">200</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">400</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">800</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb11_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb11_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">12.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">6</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">12</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">18</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">15</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb12_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb12_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">13.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">6096</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">3048</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1524</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">762</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">381</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">192.5</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb13_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb13_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">14.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">30</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">10</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">40</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">8</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">50</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">6</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb14_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb14_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">15.</h1>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">17</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">18</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">22</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">14</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">28</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">11</button></div>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb15_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb15_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">16.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">64</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">60</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">55</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">49</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">42</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">34</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb16_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb16_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">17.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">21</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">10</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">22</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">11</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">23</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">12</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb17_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb17_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">18.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2"><button type="button" class="btn btn-success">10000</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">10</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1000</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">100</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">0.1</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb18_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb18_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">19.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">5</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">20</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">10</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">40</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">20</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">80</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb19_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb19_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">20.</h1>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">18</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">10</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">5</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">6</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">3</button></div>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb20_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb20_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">21.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-3</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-6</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-15</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-24</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-39</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb21_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb21_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">22.</h1>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">2</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">5</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">12</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">9</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">22</button></div>
+                            </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb22_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb22_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">23.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1/2</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1/2</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1/4</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1/12</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1/48</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">1/240</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb23_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb23_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">24.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">0</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">15</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-15</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">30</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-30</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">45</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb24_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb24_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row">
+                          <div class="align-text-center col-md-1">
+                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                            <h1 class="lead text-center pt-2">25.</h1>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="row">
+                               <div class="col-md-2 text-center"><button type="button" class="btn btn-success">24</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">30</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">18</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">42</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">-6</button></div>
+                             <div class="col-md-2 text-center"><button type="button" class="btn btn-success">90</button></div>
+                             </div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb25_1" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <input type="text" name="jwb25_2" value="" class="form-control"  placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                      
+                      </table></br>
+                    </div>
+                  </div>
+
+                  <!-- <div >
                     <div class="col-md-12 ">
 
                         <div class="row">
@@ -99,119 +885,30 @@
                             <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
                           </div>
                           <div class="col-md-4">
+                           
                             <h1 class="lead"><?php echo $soal; ?></h1>
                           </div>
                           <div class="col-md-3">
                             <div class="form-group">
-                              <!-- <label for="exampleInputEmail1">Email address</label> -->
+                            
                               <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Angka 1, Angka 2">
                             </div>
                           </div>
-                         <!--  <td>
-                            <h1 class="lead"><?php echo $soal; ?></h1>
-                          </td> -->
+                        
                         </div>
                       
-                      <!-- <table>
-                        <tr>
-                          <td class="align-text-center">
-                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
-                            <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
-                          </td>
-                          <td>
-                            <h1 class="lead"><?php echo $soal; ?></h1>
-                          </td>
-                          <td>
-                            <div class="form-group"> -->
-                              <!-- <label for="exampleInputEmail1">Email address</label> -->
-                         <!--      <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Angka 1, Angka 2">
-                            </div>
-                          </td> -->
-                         <!--  <td>
-                            <h1 class="lead"><?php echo $soal; ?></h1>
-                          </td> -->
-                      <!--   </tr>
-                      </table> -->
-
-                       <!--  <tr>
-                        <div class="form-group"> -->
-                          <!-- <label for="exampleInputEmail1">Email address</label> -->
-                          <!-- <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
-                        </div>
-                        </tr> -->
-
-                        <!-- <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="A">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;A. &nbsp;<?php echo $pilihan_a; ?></span>
-
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="B">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;B. &nbsp;<?php echo $pilihan_b; ?></span>
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="C">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;C. &nbsp;<?php echo $pilihan_c; ?></span>
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="D">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;<?php echo $pilihan_d; ?></span>
-                          </label>
-                        </div>
-                        </tr> -->
+                      
                       </table></br>
                     </div>
-                  </div>
-                   <?php
-                   $nomor++;
-                   }
-                   ?> 
-
-                       <!-- <?php var_dump($id) ?>
-                       <?php var_dump($soal) ?>
-                       <?php var_dump($pilihan_a) ?>
-                       <?php var_dump($pilihan_b) ?>
-                       <?php var_dump($pilihan_c) ?>
-                       <?php var_dump($pilihan_d) ?> -->
+                  </div> -->
+                 <!-- akhir card -->
                 
-                <!-- <ul class="pager wizard">
-                  <li class="previous"><a href="javascript:;">Previous</a></li>                             
-                    <li class="next"><a href="javascript:;">Next</a></li>
-                  <li class="finish" onclick="return confirm('Anda yakin dengan jawaban anda ?')">
-                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success">
-                  </li> 
-                </ul> -->
-                
-                <!-- <button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button> -->
               </div>
             </div>
           </form>   
-          <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
-         <!--  <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul> -->
+        
           <div class="float-right mr-md-5 mb-3">
-            <button type="button" class="btn btn-md btn-primary text-center">Next</button>
+            <!-- <button type="button" class="btn btn-md btn-primary text-center">Next</button> -->
           </div>
           <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button></center> -->
         </div>
@@ -326,7 +1023,7 @@
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
                              var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest ketiga ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'index.php'; 
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest ketiga ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal4.php'; 
                         }
                       } 
                   } 
