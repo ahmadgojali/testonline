@@ -1,0 +1,96 @@
+<style type="text/css">
+
+/*-------------------editan label-----------------------------*/
+
+.lead { 
+  font-weight:normal;
+  font-size:1.5em;
+  line-height:1.2em;
+}
+.leadh2 { 
+  font-weight:normal;
+  font-size:1.4em;
+  line-height:1.5em;
+}
+.lead-label {
+  font-weight:normal;
+  font-size:1.5em;
+  line-height:1.45em;
+}
+.lead-jwbn {
+  font-weight:normal;
+  font-size:1.2em;
+  line-height:1.3em;
+}
+.tagline { 
+  font-weight:normal;
+  font-size:1.2em;
+  line-height:1.0em;
+}
+
+@media (max-width: 767px) {
+  .lead { 
+    font-size:1.3em;
+  }
+}
+
+/*-------------------editan-----------------------------*/
+
+.tabel-tampilan {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  vertical-align: top;
+  border: 1px solid #888888;
+}
+.tabel-tampilan > thead > tr > th,
+.tabel-tampilan > tbody > tr > th,
+.tabel-tampilan > tfoot > tr > th,
+.tabel-tampilan > thead > tr > td,
+.tabel-tampilan > tbody > tr > td,
+.tabel-tampilan > tfoot > tr > td {
+  padding: 4px;
+  line-height: 1.42857143;
+}
+.tabel-tampilan > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #888888;
+}
+.tabel-tampilan > caption + thead > tr:first-child > th,
+.tabel-tampilan > colgroup + thead > tr:first-child > th,
+.tabel-tampilan > thead:first-child > tr:first-child > th,
+.tabel-tampilan > caption + thead > tr:first-child > td,
+.tabel-tampilan > colgroup + thead > tr:first-child > td,
+.tabel-tampilan > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.tabel-tampilan .tabel-tampilan {
+  background-color: #fff;
+}
+.table-border-right {
+	border-right: 1px solid #888888;
+}
+.table-border-left {
+	border-left: 1px solid #888888;
+}
+.table-border-bottom {
+	border-bottom: 2px solid #888888;
+}
+.table-border-top {
+	border-top: 1px solid #888888;
+}
+.small {
+  font-size: 90%;
+}
+.verysmall {
+  font-size: 75%;
+}
+.strip {
+	background-color: red;
+	font-size: bold;
+}
+.red-bold {
+	color : red;
+	font-weight: bold;
+}
+</style>

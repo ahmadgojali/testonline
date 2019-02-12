@@ -25,64 +25,22 @@ include '../config/koneksi.php';
   <h1 class="display-4">Ujian Online</h1>
   <p class="lead">Selamat Datang di Sistem Recruitment Online PT Arwana Citramulia Tbk </p>
 </div>
-
-<!-- <div class="row">
-  <div class="col-md-2">
-     
-  </div>
-
-  <div class="col-md-8">
-     <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal text-center">Petunjuk Pengerjaan Sub Tes 2</h4>
-      </div>
-      <div class="card-body">
-        <div class="panel-body"> -->
-          <!-- isi petunjuk disini      -->
-<!--        </div>
-        
-        <center>
-          <a href="soal2.php" class="btn btn-md btn-primary text-center">Mulai</a>
-        </center>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-2">
-     
-  </div>
-</div>
- -->
-<!-- <div class="container"> -->
-<!-- collapse soal 1 show yang lain hide -->
 <div class="row">
   <div class="col-md-2">
      
   </div>
 
-  <div class="col-md-8">
-    <div class="accordion" id="accordionExample">
-
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0 text-center">
-              <button class="btn btn-link collapsed" id="tombol2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Petunjuk Pengerjaan Tes 3 &nbsp; - &nbsp;<u>Klik Disini </u>
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            
-          </div>
-          <div class="card-footer text-muted text-center">
-            <a href="soal3.php" class="btn btn-md btn-primary text-center mb-4 mt-4 align-middle" id="button2">Mulai</a>
-          </div>
-        </div>
+  <div class="col-8">
+    <div class="card text-center">
+      <div class="card-header lead">
+       Petunjuk Pengerjaan Tes 3
       </div>
-
-      <!-- card -->
+      <div class="card-body">
+         <p class="lead">Test ketiga adalah soal deret angka. <br> Tugas Anda adalah meneruskan deret angka yang ada.  <br> Caranya Anda harus menemukan dulu pola yang terbentuk dari angka - angka sebelumnya. <br> Contoh: 1 2 3 4 5 6 7 8 9 10 11 12 <i><b>11 12</b></i></p>
+      </div>
+      <div class="card-footer text-muted">
+       <a href="soal3.php" class="btn btn-primary">Mulai</a>
+      </div>
     </div>
   </div>
 
@@ -90,6 +48,15 @@ include '../config/koneksi.php';
      
   </div>
 </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div class="row">
       <div class="col-md-12">

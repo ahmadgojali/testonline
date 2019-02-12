@@ -24,7 +24,7 @@ else{
         $telah_berlalu      = 0;
     } 
  
-    $temp_waktu = (1*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (10*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -66,7 +66,7 @@ else{
     <div class="col-md-9">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal text-center">Tes Arwana Subtest II</h4>
+          <h4 class="my-0 font-weight-normal text-center">Tes 2 ( Soal Hubungan Kata )</h4>
         </div>
         <div class="card-body">
           <form action="simpan-soal2.php" id="frmSoal" method='POST' > 
@@ -136,7 +136,7 @@ else{
                   </div>
                   </tr>
               </div>
-            </div>
+            </div></br>
             
              <?php
              $nomor++;
@@ -144,7 +144,7 @@ else{
              ?> 
               
             <div class="float-right mr-md-5 mb-3">
-              <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan"></button>
+              <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan">
               <!-- <button type="submit" name="submit" class="btn btn-success "><i class="fa fa-key"></i>&nbsp;Login</button> -->
             </div>
           </form>

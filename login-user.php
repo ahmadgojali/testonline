@@ -1,5 +1,8 @@
 <?php 
     session_start();
+    date_default_timezone_set('Asia/Jakarta');//Menyesuaikan waktu dengan tempat kita tinggal
+    // echo $timestamp = date('d M Y - H:i:s');//Menampilkan Jam Sekarang
+    
     require "config/koneksi.php";
 
     if (isset($_POST['login'])) {
@@ -13,13 +16,13 @@
       
       if( $row >  0) {
 
-        $percobaan = mysqli_query($connect, "SELECT * FROM user where jumlah_masuk = 0 and id = $data[id]");
+        $percobaan = mysqli_query($connect, "SELECT * FROM user where validasi = 0 and id = $data[id]");
         // $data2     = mysqli_fetch_array($hasil);
         $row2     = mysqli_num_rows($percobaan);
 
         if ($row2 > 0) {
 
-        // $query = mysqli_query($connect, "UPDATE user SET jumlah_masuk = 1 WHERE id = $data[id]");
+        // $query = mysqli_query($connect, "UPDATE user SET validasi = 1, tanggal_tes = now() WHERE id = $data[id]");
 
         $_SESSION['user'] = $session;
 

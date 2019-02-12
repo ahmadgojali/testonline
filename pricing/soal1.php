@@ -25,7 +25,7 @@ else{
     } 
     
     //ubah waktu disini
-    $temp_waktu = (1*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (10*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -93,18 +93,10 @@ else{
         </div>
         <div class="card-body">
           <div class="panel-body">
-            <div align="left" style="padding-left: 5px; padding-right:1px;">
+            <div class="text-center">
               <div id='timer'></div>
             </div>      
           </div>
-          <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
-          <!-- <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul> -->
-          <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Setuju dan Lanjutkan</button></center> -->
         </div>
       </div>
     </div>
@@ -112,158 +104,63 @@ else{
     <div class="col-md-9">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal text-center">Sub Test 1 ( Tes Matematika Dasar )</h4>
+          <h4 class="my-0 font-weight-normal text-center">Test 1 ( Soal Matematika Dasar )</h4>
         </div>
         <div class="card-body">
-          <form action="hasil_la_mp.php" id="frmSoal" method='POST' > 
-            <div style="padding-left: 30px; padding-right:30px;">
-              <div class="tab-content">
-                <?php
-                  // include '../koneksi.php'; 
-                  // include '../config/koneksi.php';                    
-                  // $query = "SELECT * FROM tbsoal limit 5";
-                  $query = "SELECT * FROM soal1 order by id ASC";
-                  $hasil = mysqli_query($connect, $query);
-                  $nomor = 1;
-                  while($row = mysqli_fetch_array($hasil)){
-                  $id   = $row["id"];
-                  $soal      = $row["soal"];
-                  // $pilihan_a = $row["A"];
-                  // $pilihan_b = $row["B"];
-                  // $pilihan_c = $row["C"];
-                  // $pilihan_d = $row["D"];                     
-                ?>
-                      <!-- class="tab-pane" id="<?php echo $nomor; ?>"               -->
-                  <div >
-                    <div class="col-md-12 ">
-                      <table>
-                        <tr>
-                          <td class="align-text-top">
-                            <input type="hidden" name="id[]" value="<?php echo $id; ?>">
-                            <h1 class="lead"><?php echo $nomor; ?>. &nbsp;&nbsp;</h1>
-                          </td>
-                          <td>
-                            <h1 class="lead"><?php echo $soal; ?></h1>
-                          </td>
-                        </tr>
-                      </table>
-                        </br>
-
-                        <tr>
-                        <div class="form-group">
-                          <!-- <label for="exampleInputEmail1">Email address</label> -->
-                          <input type="text" name="pilihan[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
-                        </div>
-                        </tr>
-
-                        <!-- <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="A">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;A. &nbsp;<?php echo $pilihan_a; ?></span>
-
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="B">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;B. &nbsp;<?php echo $pilihan_b; ?></span>
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="C">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;C. &nbsp;<?php echo $pilihan_c; ?></span>
-                          </label>
-                        </div>
-                        </tr>
-
-                        <tr>
-                        <div class="animated-radio-button">
-                          <label>
-                            <input type="radio" name="pilihan[<?php echo $id;?>]" value="D">
-                            <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;<?php echo $pilihan_d; ?></span>
-                          </label>
-                        </div>
-                        </tr> -->
-                      </table></br>
+          <form action="simpan-soal1" id="frmSoal" method='POST' > 
+            
+            <?php
+             
+              $query = "SELECT * FROM soal1 order by id ASC";
+              $hasil = mysqli_query($connect, $query);
+              $nomor = 1;
+              while($row = mysqli_fetch_array($hasil)){
+              $id      = $row["id"];
+              $soal    = $row["soal"];
+              // $jawaban = $row["jawaban"];
+                                  
+            ?>
+    
+              <div class="row">
+                <div class="col-md-12">
+                  <table>
+                    <tr>
+                      <td class="align-text-top">
+                        <input type="hidden" name="id[]" value="<?php echo $id; ?>">
+                        <h1 class="lead pl-4"><?php echo $nomor; ?>. </h1>
+                      </td>
+                      <td>
+                        <h1 class="lead pl-3 pr-3"><?php echo $soal; ?></h1>
+                      </td>
+                    </tr>
+                  </table>
+                  <tr>
+                    <div class="form-group pl-md-5 pr-3">
+                      <!-- <label for="exampleInputEmail1">Email address</label> -->
+                      <input type="text" name="jawaban[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
                     </div>
-                  </div>
-                   <?php
-                   $nomor++;
-                   }
-                   ?> 
-
-                       <!-- <?php var_dump($id) ?>
-                       <?php var_dump($soal) ?>
-                       <?php var_dump($pilihan_a) ?>
-                       <?php var_dump($pilihan_b) ?>
-                       <?php var_dump($pilihan_c) ?>
-                       <?php var_dump($pilihan_d) ?> -->
-                
-                <!-- <ul class="pager wizard">
-                  <li class="previous"><a href="javascript:;">Previous</a></li>                             
-                    <li class="next"><a href="javascript:;">Next</a></li>
-                  <li class="finish" onclick="return confirm('Anda yakin dengan jawaban anda ?')">
-                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success">
-                  </li> 
-                </ul> -->
-                
-                <!-- <button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button> -->
+                  </tr>
+                </div>
               </div>
+               <?php
+               $nomor++;
+               }
+               ?> 
+
+               <!-- <?php var_dump($id) ?>
+               <?php var_dump($soal) ?>
+               <?php var_dump($pilihan_a) ?>
+               <?php var_dump($pilihan_b) ?>
+               <?php var_dump($pilihan_c) ?>
+               <?php var_dump($pilihan_d) ?> -->
+                
+            <div class="float-right mr-md-5 mb-3">
+               <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan">
             </div>
           </form>   
-          <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
-         <!--  <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul> -->
-          <div class="float-right mr-md-5 mb-3">
-            <!-- <a href="#" class="btn btn-md btn-primary text-center">Next</a> -->
-          </div>
-          <!-- <center><button type="button" class="btn btn-md btn-primary text-center">Lanjutkan</button></center> -->
         </div>
       </div>
     </div>
-
-    <!-- <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Pro</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>20 users included</li>
-          <li>10 GB of storage</li>
-          <li>Priority email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-      </div>
-    </div> -->
-    <!-- <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Enterprise</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>30 users included</li>
-          <li>15 GB of storage</li>
-          <li>Phone and email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-      </div>
-    </div> -->
   </div>
 
 <?php include 'templates/footer.php'; ?>
