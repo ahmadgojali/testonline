@@ -24,7 +24,7 @@ else{
         $telah_berlalu      = 0;
     } 
  
-    $temp_waktu = (10*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (1*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -230,7 +230,7 @@ else{
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
                              var frmSoal = document.getElementById("frmSoal");
                              // frmSoal.submit(); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'simpan-soal2.php'; 
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal3.php'; 
                         }
                       } 
                   } 

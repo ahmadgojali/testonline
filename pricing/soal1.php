@@ -25,7 +25,7 @@ else{
     } 
     
     //ubah waktu disini
-    $temp_waktu = (10*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (1*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
