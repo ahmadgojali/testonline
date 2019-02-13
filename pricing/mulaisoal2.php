@@ -10,7 +10,22 @@ include '../config/koneksi.php';
   else{
     header("location:../index.php");
   }
-
+   /*if($_GET['save'] == '1'){
+    $query = "INSERT INTO jawaban_tes1 (id_user";    
+    //for($i=1; $i <= $_GET['jml']; $i++){
+    for($i=1; $i <= 6; $i++){
+      $query .= ",no_".$i;
+      $hasil .= ",'".$_GET['no'.$i]."'";
+    }
+    $query .= " )VALUES ($session $hasil)";
+    $hasil = mysqli_query($connect, $query);
+  }*/
+    for($i = 1; $i <= 21; $i++){
+       $jawaban = $_GET['no'.$i];
+       $query   = ("INSERT INTO jawaban_tes1 (id_user, id_soal, jawaban) VALUES ($session, $i, '$jawaban')");
+       // echo $query;
+       $hasil = mysqli_query($connect, $query);
+    }  
 ?>
 
 <?php include 'templates/header.php'; ?>

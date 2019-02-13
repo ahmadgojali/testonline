@@ -77,9 +77,13 @@ include '../config/koneksi.php';
          <div class="col-md-2 lead">
            <div class="row">Nama</div>
            <div class="row">Umur</div>
+           <div class="row">No HP</div>
+           <div class="row">Pendidikan</div>
            <div class="row">Tangal Tes</div>
          </div>
          <div class="col-md-1 lead">
+           <div class="row">:</div>
+           <div class="row">:</div>
            <div class="row">:</div>
            <div class="row">:</div>
            <div class="row">:</div>
@@ -87,6 +91,8 @@ include '../config/koneksi.php';
          <div class="col-md-5 lead">
           <div class="row"><?= $data['nama'] ?></div>
            <div class="row"><?= $data['umur'] ?></div>
+           <div class="row"><?= $data['no_telp'] ?></div>
+           <div class="row"><?= $data['pendidikan'] ?></div>
            <div class="row"><?= $data['tanggal_tes'] ?></div>
          </div>
        </div>

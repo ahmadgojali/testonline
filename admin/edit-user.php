@@ -66,7 +66,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-lock"></i>
                       </div>
-                      <input type="password" class="form-control" id="password" name="password" value="<?php echo $row['password']; ?>" required>
+                      <input type="text" class="form-control" id="password" name="password" value="<?php echo $row['password']; ?>" readonly>
                       <!-- <input type="password" class="form-control" id="password" name="password" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,12}$" title="alfanumerik 6 hingga 12 karakter tidak boleh ada spasi" placeholder="Password" value="<?php echo $row['password']; ?>" required> -->
                     </div>
                     </div>
@@ -137,17 +137,28 @@
                     </select>
                   </div>
                 </div> -->
-                 <!--  <div class="form-group">
-                    <label for="no_tlp" class="col-sm-3 control-label">No Telepon &nbsp;*</label>
+                  <div class="form-group">
+                    <label for="no_telp" class="col-sm-3 control-label">No Telepon &nbsp;*</label>
                   <div class="col-sm-7">
                     <div class="input-group">
                       <div class="input-group-addon">
                         <i class="fa fa-phone"></i>
                       </div>
-                      <input type="tel" class="form-control" id="no_telp" name="no_telp" pattern="^\d{12}$" title="Hanya 12 karakter numerik" placeholder="Nomor Telepon" required>
+                      <input type="tel" class="form-control" id="no_telp" name="no_telp" placeholder="Nomor Telepon" value="<?php echo $row['no_telp']; ?>" required>
                     </div>
                   </div>
-                </div> -->
+                </div>
+                 <div class="form-group">
+                    <label for="pendidikan" class="col-sm-3 control-label">Pendidikan Terakhir &nbsp;*</label>
+                  <div class="col-sm-7">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-graduation-cap"></i>
+                      </div>
+                      <input type="text" class="form-control" id="pendidikan" name="pendidikan" placeholder="Pendidikan Terakhir" value="<?php echo $row['pendidikan']; ?>" required>
+                    </div>
+                  </div>
+                </div>
                 <!-- <div class="form-group">
                   <label for="foto" class="col-sm-3 control-label">Foto &nbsp;**</label>
 
@@ -201,13 +212,15 @@
           $nama           = ucwords($_POST['nama']);
           $email          = $_POST['email'];
           $username       = ucwords($_POST['username']);
-          $password       = ucwords($_POST['password']);
-          $umur       	  = ucwords($_POST['umur']);
+          // $password       = ucwords($_POST['password']);
+          $umur           = ucwords($_POST['umur']);
+          $no_telp        = $_POST['no_telp'];
+          $pendidikan     = $_POST['pendidikan'];
 
           // var_dump($_POST);
 
 	     // Proses simpan data ke Database
-          $query = "UPDATE user SET nama='".$nama."', username='".$username."', password='".$password."', email='".$email."', umur='".$umur."' WHERE id='".$id."'";
+          $query = "UPDATE user SET nama='".$nama."', username='".$username."', email='".$email."', umur='".$umur."', no_telp='".$no_telp."', pendidikan='".$pendidikan."' WHERE id='".$id."'";
           $sql = mysqli_query($connect, $query); // Eksekusi/ Jalankan query dari variabel $query
 
           if($sql){ // Cek jika proses simpan ke database sukses atau tidak

@@ -69,7 +69,7 @@ else{
           <h4 class="my-0 font-weight-normal text-center">Tes 2 ( Soal Hubungan Kata )</h4>
         </div>
         <div class="card-body">
-          <form action="simpan-soal2.php" id="frmSoal" method='POST' > 
+          <form action="simpan-soal2.php" id="Soal" method='POST' > 
             <?php
              
               $query = "SELECT * FROM soal2 order by id ASC";
@@ -153,10 +153,29 @@ else{
     </div>
   </div>
 
+  <!-- Modal Popup untuk Delete--> 
+  <div id="Mymodal" class="modal fade">
+    <div class="modal-dialog">
+      <!-- modal content -->
+    <div class="modal-content" style="margin-top:100px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" style="text-align:center;">Anda yakin menghapus soal ini ?</h4>
+      </div>
+      <!-- modal footer         -->
+      <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
+        <a href="#" class="btn btn-danger" id="delete_link"><i class="ace-icon fa fa-trash-o"></i> Delete</a>
+        <button type="button" class="btn btn-success" data-dismiss="modal"><i class="ace-icon fa fa-undo"></i> Cancel</button>
+      </div>
+    </div>
+    </div>
+  </div>
+    
+
 <?php include 'templates/footer.php'; ?>
 
 <!-- Script Wizard -->
-    <script type="text/javascript">
+   <!--  <script type="text/javascript">
     $(document).ready(function() {
         $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
         var $total = navigation.find('li').length;
@@ -170,9 +189,70 @@ else{
       });
     });
 
-    </script>
+    </script> -->
 
-    <!-- Script Timer -->
+    <!-- ajax kirim data dari form -->
+  <!--   <script type="text/javascript">
+       $(document).ready(function(e) {
+          $("#Soal").on("submit", (function(e) {
+              e.preventDefault();
+              $.ajax({
+                  url : 'simpan-soal2.php',
+                  type : 'post',
+                  data : $('#Soal').serialize(),
+                  contentType : false,
+                  cache : false,
+                  processData : false,
+                  success : function() {
+                     alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
+                  }
+              });
+          }));
+        })
+    </script>
+ -->
+ <!-- ajax kirim data dari form cara ke dua tanpa $(document).ready(function(e) {-->
+    <script>
+      $('#Soal').submit(function() {
+       $.ajax({
+        
+        // url yang akan digunakan untuk memproses data. karena pada form sudah terdapat nilai action (proses.php) maka saya tinggal mengambil nilai dari action tsb menggunakan $(this).attr('action')
+          url : $(this).attr('action'),
+          // jenis request yang dipakai, bisa ‘POST’ atau ‘GET’
+          type : 'post',
+          // data yang dikirimkan, dalam format querystring. untuk menghasilkan querystring dari form, saya menggunakan fungsi serialize()
+          data : $(this).serialize(),
+          // fungsi yang akan dijalankan jika request berhasil, dengan sebuah argumen berupa data yang dikembalikan dari server, dalam hal ini adalah hasil output dari file proses.php (hasil output ini akan saya tampilkan ke dalam sebuah div dengan id="result" )
+          success : function() {
+             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
+          }
+      });
+     });
+    </script>
+   
+     <!-- ajax kirim data dari form cara ke ketiga tanpa $(document).ready-->
+      <!-- <script>
+      $(function () {
+
+        $('#Soal').on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: 'simpan-soal2.php',
+            data: $('#Soal').serialize(),
+            success: function () {
+               alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
+            }
+          });
+
+        });
+
+      });
+      </script> -->
+
+         <!-- Script Timer -->
        <script type="text/javascript">
           $(document).ready(function() {
                /** Membuat Waktu Mulai Hitung Mundur Dengan 
@@ -183,15 +263,16 @@ else{
               var detik   = <?= $detik; ?>;
               var menit   = <?= $menit; ?>;
               var jam     = <?= $jam; ?>;
+
+               /** setTimout(hitung, 1000) digunakan untuk 
+                      * mengulang atau merefresh halaman selama 1000 (1 detik) 
+                  */
+              var interval = setInterval(hitung,1000);
                 
                /**
                  * Membuat function hitung() sebagai Penghitungan Waktu
                */
               function hitung() {
-                  /** setTimout(hitung, 1000) digunakan untuk 
-                      * mengulang atau merefresh halaman selama 1000 (1 detik) 
-                  */
-                  setTimeout(hitung,1000);
     
                  /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
                  if(menit < 5 && jam == 0){
@@ -226,15 +307,75 @@ else{
                               * clearInterval() Memberhentikan Interval dan submit secara otomatis
                           */
                           if(jam < 0) {
-                             clearInterval(); 
+                             // clearTimeout();
+                              // document.getElementById("#Soal").submit();
+                              // clearTimeout();
+                              StopHitung();
+                              alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.');
+                              var Soal = document.getElementById("Soal");
+                              Soal.submit();
+
+                              // $('#Mymodal').modal('show');
+                                
+                                
+
+                           
+                             // clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
-                             var frmSoal = document.getElementById("frmSoal");
                              // frmSoal.submit(); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal3.php'; 
+                             // alert('Maaf, Waktu pengerjaan untuk soal subtest kedua ini telah habis, lanjut ke subtest berikutnya.'), window.location = "simpan-soal2.php"; 
+                             // document.frmSoal.submit();
+                             // document.Soal.submit();
+                             // submitform();
+                              // $.ajax
+                              //  ({
+                              //    type:'post',
+                              //    url:'simpan-soal2.php',
+                              //    data: $("#frmSoal").serialize(),
+                              //    data:{
+                              //     logout:"logout"
+                              //    },
+                              //    success:function(response) 
+                              //    {
+                              //     alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.'), window.location = "simpan-soal2.php";
+                              //    }
+                              //  });
+
+                               // $.ajax({
+                               //    type: 'post',
+                               //    url: 'simpan-soal2.php',
+                               //    data: $('#frmSoal').serialize(),
+                               //    success: function () 
+                               //    {
+                               //      alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
+                               //    }
+                               //  });
+
+                              //  $.ajax({
+                              //     url : 'simpan-soal2.php',
+                              //     type : 'post',
+                              //     data : $('Soal').serialize(),
+                              //     contentType : false,
+                              //     cache : false,
+                              //     processData : false,
+                              //     success : function() {
+                              //        alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
+                              //     }
+                              // });
+
                         }
                       } 
                   } 
-              }           
+              }
+
+               /**
+                 * Membuat function StopHitung() sebagai Penghitungan Waktu
+               */
+              function StopHitung() {
+                clearInterval(interval);
+              }  
+
+                  
               /** Menjalankan Function Hitung Waktu Mundur */
               hitung();
         }); 

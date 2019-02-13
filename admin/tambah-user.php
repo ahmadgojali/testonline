@@ -45,23 +45,23 @@
                       <div class="input-group-addon">
                         <i class="fa fa-key"></i>
                       </div>
-                      <input type="text" class="form-control" id="username" name="username" required>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
                       <!-- <input type="text" class="form-control" id="username" name="username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,12}$" title="alfanumerik 6 hingga 12 karakter tidak boleh ada spasi" placeholder="Username" required> -->
                     </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password &nbsp;*</label>
                     <div class="col-sm-7">
                       <div class="input-group">
                       <div class="input-group-addon">
                         <i class="fa fa-lock"></i>
                       </div>
-                      <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Password" required> -->
                       <!-- <input type="password" class="form-control" id="password" name="password" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,12}$" title="alfanumerik 6 hingga 12 karakter tidak boleh ada spasi" placeholder="Password" required> -->
+                   <!--  </div>
                     </div>
-                    </div>
-                  </div>
+                  </div> -->
                  
                  <!--  <div class="form-group">
                     <label class="col-sm-3 control-label">Jenis Kelamin &nbsp;*</label>
@@ -128,17 +128,28 @@
                     </select>
                   </div>
                 </div> -->
-                 <!--  <div class="form-group">
-                    <label for="no_tlp" class="col-sm-3 control-label">No Telepon &nbsp;*</label>
+                <div class="form-group">
+                    <label for="no_telp" class="col-sm-3 control-label">No Telepon &nbsp;*</label>
                   <div class="col-sm-7">
                     <div class="input-group">
                       <div class="input-group-addon">
                         <i class="fa fa-phone"></i>
                       </div>
-                      <input type="tel" class="form-control" id="no_telp" name="no_telp" pattern="^\d{12}$" title="Hanya 12 karakter numerik" placeholder="Nomor Telepon" required>
+                      <input type="tel" class="form-control" id="no_telp" name="no_telp" placeholder="Nomor Telepon" required>
                     </div>
                   </div>
-                </div> -->
+                </div>
+                 <div class="form-group">
+                    <label for="pendidikan" class="col-sm-3 control-label">Pendidikan Terakhir &nbsp;*</label>
+                  <div class="col-sm-7">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-graduation-cap"></i>
+                      </div>
+                      <input type="text" class="form-control" id="pendidikan" name="pendidikan" placeholder="Pendidikan Terakhir" required>
+                    </div>
+                  </div>
+                </div>
                 <!-- <div class="form-group">
                   <label for="foto" class="col-sm-3 control-label">Foto &nbsp;**</label>
 
@@ -191,12 +202,27 @@
           $nama           = ucwords($_POST['nama']);
           $email          = $_POST['email'];
           $username       = ucwords($_POST['username']);
-          $password       = ucwords($_POST['password']);
+          // $password       = ucwords($_POST['password']);
           $umur       	  = ucwords($_POST['umur']);
+          $no_telp        = $_POST['no_telp'];
+          $pendidikan     = $_POST['pendidikan'];
+
+          function randomPassword() {
+              $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+              $pass = array(); //remember to declare $pass as an array
+              $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+              for ($i = 0; $i < 8; $i++) {
+                  $n = rand(0, $alphaLength);
+                  $pass[] = $alphabet[$n];
+              }
+              return implode($pass); //turn the array into a string
+          }
+
+          $password = randomPassword();
 
 
 	      // Proses simpan data ke Database
-	      $query = ("INSERT INTO user (nama, username, password, email, umur, validasi) VALUES ('$nama','$username' ,'$password','$email', $umur, '$validasi')");
+	      $query = ("INSERT INTO user (nama, username, password, email, umur, no_telp, pendidikan, validasi) VALUES ('$nama','$username' ,'$password','$email', '$umur', '$no_telp', '$pendidikan', '$validasi')");
 	      $sql = mysqli_query($connect, $query); // Eksekusi/ Jalankan query dari variabel $query
 
 	      if($sql){ // Cek jika proses simpan ke database sukses atau tidak

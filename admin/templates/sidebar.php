@@ -27,7 +27,7 @@
          <li class="treeview">
           <a href="#">
             <i class="fa fa-reorder"></i>
-            <span>Data Mater</span>
+            <span>Data Pelamar</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

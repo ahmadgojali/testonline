@@ -30,12 +30,12 @@ else{
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
     if ($temp_menit < 60) { 
-        /* Apabila $temp_menit yang kurang dari 60 menit */
+        //Apabila $temp_menit yang kurang dari 60 menit 
         $jam    = 0; 
         $menit  = $temp_menit; 
         $detik  = $temp_detik; 
     } else { 
-        /* Apabila $temp_menit lebih dari 60 menit */           
+        //Apabila $temp_menit lebih dari 60 menit          
         $jam    = (int)($temp_menit/60);    //$temp_menit dijadikan jam dengan dibagi 60 dan dibulatkan menjadi integer 
         $menit  = $temp_menit%60;           //$temp_menit diambil sisa bagi ($temp_menit%60) untuk menjadi menit
         $detik  = $temp_detik;
@@ -114,11 +114,11 @@ else{
               $query = "SELECT * FROM soal1 order by id ASC";
               $hasil = mysqli_query($connect, $query);
               $nomor = 1;
+              $num_rows = mysqli_num_rows($hasil);
               while($row = mysqli_fetch_array($hasil)){
               $id      = $row["id"];
               $soal    = $row["soal"];
               // $jawaban = $row["jawaban"];
-                                  
             ?>
     
               <div class="row">
@@ -137,7 +137,7 @@ else{
                   <tr>
                     <div class="form-group pl-md-5 pr-3">
                       <!-- <label for="exampleInputEmail1">Email address</label> -->
-                      <input type="text" name="jawaban[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
+                      <input type="text" name="jawaban<?= $id ?>" id="jawaban<?= $id ?>" value="" class="form-control"  placeholder="Jawab disini">
                     </div>
                   </tr>
                 </div>
@@ -146,14 +146,14 @@ else{
                $nomor++;
                }
                ?> 
-
                <!-- <?php var_dump($id) ?>
                <?php var_dump($soal) ?>
                <?php var_dump($pilihan_a) ?>
                <?php var_dump($pilihan_b) ?>
                <?php var_dump($pilihan_c) ?>
                <?php var_dump($pilihan_d) ?> -->
-                
+
+            <input type="hidden" id="jmrows" value="<?=$num_rows?>">             
             <div class="float-right mr-md-5 mb-3">
                <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan">
             </div>
@@ -238,8 +238,15 @@ else{
                           if(jam < 0) {
                              clearInterval(); 
                              /** Variable yang digunakan untuk submit secara otomatis di Form */
-                             var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal2.php'; 
+                             var count = document.getElementById("jmrows").value; 
+                             var text = "";
+                             var i = 1;
+                              for (i = 1; i <= count; i++) { 
+                                text += "&no"+i+"="+ document.getElementById("jawaban"+i).value; 
+                                //text += "&jawab"+i;
+                              }
+
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal2.php?save=1'+text+"&jml="+count; 
                         }
                       } 
                   } 

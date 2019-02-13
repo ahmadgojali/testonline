@@ -50,7 +50,7 @@
                 <?php 
                 include '../config/koneksi.php';                   
                 // $query  = "SELECT * FROM hasil_diagnosis";
-                $query = "SELECT * FROM user ORDER BY nama ASC";
+                $query = "SELECT * FROM user ORDER BY id DESC";
                 $hasil  = mysqli_query($connect, $query);
                 $nomor = 1;
                 while($row = mysqli_fetch_array($hasil)){                     
