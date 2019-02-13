@@ -1,20 +1,6 @@
 <?php
-//set session untuk username yang logi
-session_start();
-include '../config/koneksi.php';
-// if(isset($_SESSION['username'])){
-// }
-if(isset($_SESSION['user'])){
-  $session = $_SESSION['user'];
-  $query   = mysqli_query($connect, "SELECT * FROM user WHERE id ='$session'") or die (mysql_error());
-  $data    = mysqli_fetch_array($query);
-}
-else{
-  header("location:../index.php");
-}
-
-	//set session untuk timer soal 
-	//set session dulu dengan nama $_SESSION["mulai"]
+//set session untuk timer soal 
+//set session dulu dengan nama $_SESSION["mulai"]
     if (isset($_SESSION["mulai2"])) { 
         //jika session sudah ada
         $telah_berlalu = time() - $_SESSION["mulai2"];
@@ -38,15 +24,19 @@ else{
         $jam    = (int)($temp_menit/60);    //$temp_menit dijadikan jam dengan dibagi 60 dan dibulatkan menjadi integer 
         $menit  = $temp_menit%60;           //$temp_menit diambil sisa bagi ($temp_menit%60) untuk menjadi menit
         $detik  = $temp_detik;
-    }
+    }   
+
 ?>
-
-
-<?php include 'templates/header.php'; ?>
-
-<?php include 'templates/navbar.php'; ?>
-
-  <div class="card-deck  px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+   
+</head>
+<body>        
+    <div id='timer'></div>
+   <div class="card-deck  px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <!-- timer -->
      <div class="col-md-3">
        <div class="card mb-4 shadow-sm">
@@ -153,106 +143,14 @@ else{
     </div>
   </div>
 
-  <!-- Modal Popup untuk Delete--> 
-  <div id="Mymodal" class="modal fade">
-    <div class="modal-dialog">
-      <!-- modal content -->
-    <div class="modal-content" style="margin-top:100px;">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" style="text-align:center;">Anda yakin menghapus soal ini ?</h4>
-      </div>
-      <!-- modal footer         -->
-      <div class="modal-footer" style="margin:0px; border-top:0px; text-align:center;">
-        <a href="#" class="btn btn-danger" id="delete_link"><i class="ace-icon fa fa-trash-o"></i> Delete</a>
-        <button type="button" class="btn btn-success" data-dismiss="modal"><i class="ace-icon fa fa-undo"></i> Cancel</button>
-      </div>
-    </div>
-    </div>
-  </div>
-    
-
-<?php include 'templates/footer.php'; ?>
-
-<!-- Script Wizard -->
-   <!--  <script type="text/javascript">
-    $(document).ready(function() {
-        $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
-        var $total = navigation.find('li').length;
-        var $current = index+1;
-        var $percent = ($current/$total) * 100;
-        $('#rootwizard').find('.bar').css({width:$percent+'%'});
-      }});
-      $('#rootwizard .finish').click(function() {
-        
-        $('#rootwizard').find("a[href*='tab1']").trigger('click');
-      });
-    });
-
-    </script> -->
-
-    <!-- ajax kirim data dari form -->
-<!--   <script type="text/javascript">
-       $(document).ready(function(e) {
-          $("#Soal").on("submit", (function(e) {
-              e.preventDefault();
-              $.ajax({
-                  url : 'simpan-soal2.php',
-                  type : 'post',
-                  data : $('#Soal').serialize(),
-                  contentType : false,
-                  cache : false,
-                  processData : false,
-                  success : function() {
-                     alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
-                  }
-              });
-          }));
-        })
-    </script>
- -->
- <!-- ajax kirim data dari form cara ke dua tanpa $(document).ready(function(e) {-->
-    <script>
-      $('#Soal').submit(function() {
-       $.ajax({
-        
-        // url yang akan digunakan untuk memproses data. karena pada form sudah terdapat nilai action (proses.php) maka saya tinggal mengambil nilai dari action tsb menggunakan $(this).attr('action')
-          url : $(this).attr('action'),
-          // jenis request yang dipakai, bisa ‘POST’ atau ‘GET’
-          type : 'post',
-          // data yang dikirimkan, dalam format querystring. untuk menghasilkan querystring dari form, saya menggunakan fungsi serialize()
-          data : $(this).serialize(),
-          // fungsi yang akan dijalankan jika request berhasil, dengan sebuah argumen berupa data yang dikembalikan dari server, dalam hal ini adalah hasil output dari file proses.php (hasil output ini akan saya tampilkan ke dalam sebuah div dengan id="result" )
-          success : function() {
-             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
-          }
-      });
-     });
-    </script>
-   
-     <!-- ajax kirim data dari form cara ke ketiga tanpa $(document).ready-->
-      <!-- <script>
-      $(function () {
-
-        $('#Soal').on('submit', function (e) {
-
-          e.preventDefault();
-
-          $.ajax({
-            type: 'post',
-            url: 'simpan-soal2.php',
-            data: $('#Soal').serialize(),
-            success: function () {
-               alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.');
-            }
-          });
-
-        });
-
-      });
-      </script> -->
-
-       <script type="text/javascript">
+</body>
+ <!-- Kita membutuhkan jquery, disini saya menggunakan langsung dari jquery.com, jquery ini bisa didownload dan ditaruh dilocal -->
+    <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+ <script src="../assets/dist/jquery-3.3.1.min.js"></script>
+  
+    <!-- Script Timer -->
+    <script type="text/javascript">
         $(document).ready(function() {
             /** Membuat Waktu Mulai Hitung Mundur Dengan 
                 * var detik;
@@ -279,7 +177,7 @@ else{
   
                 /** Menampilkan Waktu Timer pada Tag #Timer di HTML yang tersedia */
                 $('#timer').html(
-                    '<h4 align="center"'+peringatan+'>Sisa waktu anda <br />' + jam + ' jam : ' + menit + ' menit : ' + detik + ' detik</h4><hr>'
+                    '<h1 align="center"'+peringatan+'>Sisa waktu anda <br />' + jam + ' jam : ' + menit + ' menit : ' + detik + ' detik</h1><hr>'
                 );
   
                 /** Melakukan Hitung Mundur dengan Mengurangi variabel detik - 1 */
@@ -309,7 +207,7 @@ else{
                             clearInterval(hitung); 
                             /** Variable yang digunakan untuk submit secara otomatis di Form */
                             var frmSoal = document.getElementById("frmSoal"); 
-                           alert('Maaf, Waktu pengerjaan untuk soal tes ke-2 ini telah habis, lanjut ke tes berikutnya.');
+                            alert('Waktu Anda telah habis, Jika ingin mencoba lagi silahkan dihapus dulu SESSION browser anda');
                             frmSoal.submit(); 
                         } 
                     } 
@@ -319,7 +217,4 @@ else{
             hitung();
         });
     </script>
-
-        
-</body>
 </html>

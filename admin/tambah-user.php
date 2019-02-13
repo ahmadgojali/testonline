@@ -205,7 +205,7 @@
           // $password       = ucwords($_POST['password']);
           $umur       	  = ucwords($_POST['umur']);
           $no_telp        = $_POST['no_telp'];
-          $pendidikan     = $_POST['pendidikan'];
+          $pendidikan     = ucwords($_POST['pendidikan']);
 
           function randomPassword() {
               $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";

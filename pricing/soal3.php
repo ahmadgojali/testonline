@@ -24,7 +24,7 @@ else{
         $telah_berlalu      = 0;
     } 
  
-    $temp_waktu = (1*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (0.5*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -68,7 +68,7 @@ else{
           <h4 class="my-0 font-weight-normal text-center">Test 3 ( Soal Deret Angka )</h4>
         </div>
         <div class="card-body">
-          <form action="hasil_la_mp.php" id="frmSoal" method='POST' > 
+          <form action="simpan-soal3.php" id="frmSoal" method='POST' > 
             <?php
               // // include '../koneksi.php'; 
               include '../config/koneksi.php';                    
@@ -131,9 +131,9 @@ else{
              }
              ?> 
             <!-- button simpan -->
-            <div class="float-right mr-md-5 mb-3">
+          <!--   <div class="float-right mr-md-5 mb-3">
               <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan">
-            </div>
+            </div> -->
             <!-- form -->
           </form> 
         </div>   
@@ -892,7 +892,7 @@ else{
 <?php include 'templates/footer.php'; ?>
 
 <!-- Script Wizard -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     $(document).ready(function() {
         $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
         var $total = navigation.find('li').length;
@@ -906,7 +906,7 @@ else{
       });
     });
 
-    </script>
+    </script> -->
 
     <!-- Script Timer -->
        <script type="text/javascript">
@@ -961,12 +961,13 @@ else{
                           /** Jika var jam < 0
                               * clearInterval() Memberhentikan Interval dan submit secara otomatis
                           */
-                          if(jam < 0) {
-                             clearInterval(); 
-                             /** Variable yang digunakan untuk submit secara otomatis di Form */
-                             var frmSoal = document.getElementById("frmSoal"); 
-                             alert('Maaf, Waktu pengerjaan untuk soal subtest ketiga ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal4.php'; 
-                        }
+                          if(jam < 0) { 
+                            clearInterval(hitung); 
+                            /** Variable yang digunakan untuk submit secara otomatis di Form */
+                            var frmSoal = document.getElementById("frmSoal"); 
+                            alert('Maaf, Waktu pengerjaan untuk soal tes ke-3 ini telah habis, lanjut ke tes berikutnya.');
+                            frmSoal.submit(); 
+                        } 
                       } 
                   } 
               }           

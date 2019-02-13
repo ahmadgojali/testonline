@@ -20,12 +20,12 @@ include '../config/koneksi.php';
     $query .= " )VALUES ($session $hasil)";
     $hasil = mysqli_query($connect, $query);
   }*/
-    for($i = 1; $i <= 21; $i++){
-       $jawaban = $_GET['no'.$i];
-       $query   = ("INSERT INTO jawaban_tes1 (id_user, id_soal, jawaban) VALUES ($session, $i, '$jawaban')");
-       // echo $query;
-       $hasil = mysqli_query($connect, $query);
-    }  
+    // for($i = 1; $i <= 21; $i++){
+    //    $jawaban = $_GET['no'.$i];
+    //    $query   = ("INSERT INTO jawaban_tes1 (id_user, id_soal, jawaban) VALUES ($session, $i, '$jawaban')");
+    //    // echo $query;
+    //    $hasil = mysqli_query($connect, $query);
+    // }  
 ?>
 
 <?php include 'templates/header.php'; ?>

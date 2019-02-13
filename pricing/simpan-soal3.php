@@ -12,37 +12,39 @@ include '../config/koneksi.php';
   }
 
     
-    $query = ("SELECT * from soal2");
+    $query = ("SELECT * from soal3");
 
     $hasil    = mysqli_query($connect, $query);       
     $jml_soal = mysqli_num_rows($hasil);
 
     $kd_soal = $_POST["id"];
-    $pilihan = $_POST["pilihan"];
+    $pilihan1 = $_POST["jawaban1"];
+    $pilihan2 = $_POST["jawaban2"];
 
     if(isset($_SESSION['user'])){
       $session = $_SESSION['user'];
-      $query   = mysqli_query($connect, "SELECT * FROM jawaban_tes2 WHERE id_user ='$session'") or die (mysql_error());
+      $query   = mysqli_query($connect, "SELECT * FROM jawaban_tes3 WHERE id_user ='$session'") or die (mysql_error());
       $data    = mysqli_fetch_array($query);
       
       if ($data['id_user'] == $session){
-         echo "<script language='javascript'>window.alert('Maaf, Anda sudah mengerjakan tes ini sebelumnya.'), window.location = 'mulaisoal3.php';</script>";
+         echo "<script language='javascript'>window.alert('Maaf, Anda sudah mengerjakan tes ini sebelumnya.'), window.location = 'mulaisoal4.php';</script>";
       }
 
       else {
 
         for ($i = 1; $i <= $jml_soal; $i++)  {
          
-         @$jawaban = $pilihan[$i];
+         @$jawaban1 = $pilihan1[$i];
+         @$jawaban2 = $pilihan2[$i];
 
         
-          $query   = ("INSERT INTO jawaban_tes2 (id_user, id_soal, jawaban) VALUES ($session, $i, '$jawaban')");
+          $query   = ("INSERT INTO jawaban_tes3 (id_user, id_soal, jawaban1, jawaban2) VALUES ($session, $i, '$jawaban1', '$jawaban2')");
 
           $hasil = mysqli_query($connect, $query);
 
         }
 
-          header("location:mulaisoal3.php");
+          header("location:mulaisoal4.php");
       }
     }
 
@@ -52,7 +54,7 @@ include '../config/koneksi.php';
     var_dump($pilihan);
 
 
-   //  $query = ("SELECT * from soal2");
+   //  $query = ("SELECT * from soal3");
 
   	// $hasil = mysqli_query($connect, $query);       
   	// $cek   = mysqli_num_rows($hasil);
@@ -76,7 +78,7 @@ include '../config/koneksi.php';
    //            $jawaban = $pilihan[$nomor];
               
    //            //cocokan jawaban user dengan jawaban di database
-   //            $query = ("SELECT * from soal2 where id ='$nomor'and jawaban ='$jawaban'");
+   //            $query = ("SELECT * from soal3 where id ='$nomor'and jawaban ='$jawaban'");
    //            $hasil = mysqli_query($connect, $query);
               
    //            $cek = mysqli_num_rows($hasil);
@@ -106,25 +108,25 @@ include '../config/koneksi.php';
 
    //  if(isset($_SESSION['user'])){
 	  //   $session = $_SESSION['user'];
-	  //   $query   = mysqli_query($connect, "SELECT * FROM jawaban_tes2 WHERE id_user ='$session'") or die (mysql_error());
+	  //   $query   = mysqli_query($connect, "SELECT * FROM jawaban_tes3 WHERE id_user ='$session'") or die (mysql_error());
 	  //   $data    = mysqli_fetch_array($query);
   		
   	// 	if ($data['id_user'] == $session){
-  	// 		$query = ("UPDATE jawaban_tes2 SET nilai='".$nilai."' WHERE id_user='".$session."'");
+  	// 		$query = ("UPDATE jawaban_tes3 SET nilai='".$nilai."' WHERE id_user='".$session."'");
   	// 		$hasil = mysqli_query($connect, $query);
 
   			
 
-  	// 		// header("location:mulaisoal3.php");
+  	// 		// header("location:mulaisoal4.php");
   	// 		// var_dump($hasil);
   	// 	}
 
   	// 	else {
-  	// 		$query = ("INSERT INTO jawaban_tes2 (id_user, nilai) VALUES ($session, $nilai)");
+  	// 		$query = ("INSERT INTO jawaban_tes3 (id_user, nilai) VALUES ($session, $nilai)");
   	// 		$hasil = mysqli_query($connect, $query);
 
 
-  	// 		// header("location:mulaisoal3.php");
+  	// 		// header("location:mulaisoal4.php");
   	// 		// var_dump($hasil);
   	// 	}
   	// }

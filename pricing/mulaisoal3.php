@@ -11,12 +11,6 @@ include '../config/koneksi.php';
     header("location:../index.php");
   }
 
-   for($i = 1; $i <= 21; $i++){
-       $jawaban = $_GET['no'.$i];
-       $query   = ("INSERT INTO jawaban_tes1 (id_user, id_soal, jawaban) VALUES ($session, $i, '$jawaban')");
-       // echo $query;
-       $hasil = mysqli_query($connect, $query);
-    }  
 
 ?>
 
@@ -64,48 +58,6 @@ include '../config/koneksi.php';
 <br>
 <br>
 <br>
-
-<div class="row">
-      <div class="col-md-12">
-         <div class="row">
-          <div class="col-md-3">
-              <div class="panel panel-default">
-                  <div class="panel-body">
-                    <legend><center>Jawaban</center></legend> 
-                      <div align="left" style="padding-left: 5px; padding-right:1px;">
-                   <?php
-                   echo "
-                        <h4 align='justyfy'>Jawaban Benar</td><td> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;$benar </h4> </br>
-                        <h4 align='justyfy'>Jawaban Salah</td><td> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;$salah </h4> </br> 
-                        <h4 align='justyfy'>Jumlah Soal</td><td> &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;$jml_soal </h4> </br>"   
-                      ?>
-                      </div>      
-                  </div>
-              </div>
-          </div>
-
-        <div class="col-md-9">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                    <legend>Nilai Anda</legend> 
-                      <?php
-                        if ($nilai <= 50 ){
-                          echo "<p align='center'><font size='7' color='red'>$nilai</font></p><hr>";  
-                        }
-                        else {
-                          echo "<p align='center'><font size='7' color='blue'>$nilai</font></p><hr>";
-                        } 
-                      ?>
-                <legend>jumlah soal : <?php echo "$jml_soal";  ?></legend>
-                <div align="center">
-                <a href="index.php" class="btn btn-success"> Selesai</a>
-                </div>  
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 <?php include 'templates/footer.php'; ?>
 

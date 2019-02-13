@@ -25,7 +25,7 @@ else{
     } 
     
     //ubah waktu disini
-    $temp_waktu = (0.5*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (1*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -107,7 +107,7 @@ else{
           <h4 class="my-0 font-weight-normal text-center">Test 1 ( Soal Matematika Dasar )</h4>
         </div>
         <div class="card-body">
-          <form action="simpan-soal1.php" id="frmSoal" method='POST' > 
+          <form action="simpan-soal1" id="frmSoal" method='POST' > 
             
             <?php
              
@@ -137,7 +137,7 @@ else{
                   <tr>
                     <div class="form-group pl-md-5 pr-3">
                       <!-- <label for="exampleInputEmail1">Email address</label> -->
-                      <input type="text" name="jawaban[<?php echo $id;?>]" value="" class="form-control"  placeholder="Jawab disini">
+                      <input type="text" name="jawaban<?= $id ?>" id="jawaban<?= $id ?>" value="" class="form-control"  placeholder="Jawab disini">
                     </div>
                   </tr>
                 </div>
@@ -153,10 +153,10 @@ else{
                <?php var_dump($pilihan_c) ?>
                <?php var_dump($pilihan_d) ?> -->
 
-           <!--  <input type="hidden" id="jmrows" value="<?=$num_rows?>">             
+            <input type="hidden" id="jmrows" value="<?=$num_rows?>">             
             <div class="float-right mr-md-5 mb-3">
                <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan">
-            </div> -->
+            </div>
           </form>   
         </div>
       </div>
@@ -166,7 +166,7 @@ else{
 <?php include 'templates/footer.php'; ?>
 
 <!-- Script Wizard -->
-<!--     <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
         var $total = navigation.find('li').length;
@@ -180,78 +180,82 @@ else{
       });
     });
 
-    </script> -->
+    </script>
 
-    <script type="text/javascript">
-
-        $(document).ready(function() {
-            /** Membuat Waktu Mulai Hitung Mundur Dengan 
+    <!-- Script Timer -->
+       <script type="text/javascript">
+          $(document).ready(function() {
+               /** Membuat Waktu Mulai Hitung Mundur Dengan 
                 * var detik;
                 * var menit;
                 * var jam;
-            */
-            var detik   = <?= $detik; ?>;
-            var menit   = <?= $menit; ?>;
-            var jam     = <?= $jam; ?>;
-                  
-            /**
-               * Membuat function hitung() sebagai Penghitungan Waktu
-            */
-            function hitung() {
-                /** setTimout(hitung, 1000) digunakan untuk 
-                     * mengulang atau merefresh halaman selama 1000 (1 detik) 
-                */
-                setTimeout(hitung,1000);
-  
-                /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
-                if(menit < 10 && jam == 0){
-                    var peringatan = 'style="color:red"';
-                };
-  
-                /** Menampilkan Waktu Timer pada Tag #Timer di HTML yang tersedia */
-                $('#timer').html(
-                    '<h4 align="center"'+peringatan+'>Sisa waktu anda <br />' + jam + ' jam : ' + menit + ' menit : ' + detik + ' detik</h4><hr>'
-                );
-  
-                /** Melakukan Hitung Mundur dengan Mengurangi variabel detik - 1 */
-                detik --;
-  
-                /** Jika var detik < 0
-                    * var detik akan dikembalikan ke 59
-                    * Menit akan Berkurang 1
-                */
-                if(detik < 0) {
-                    detik = 59;
-                    menit --;
-  
-                   /** Jika menit < 0
-                        * Maka menit akan dikembali ke 59
-                        * Jam akan Berkurang 1
-                    */
-                    if(menit < 0) {
-                        menit = 59;
-                        jam --;
-  
-                        /** Jika var jam < 0
-                            * clearInterval() Memberhentikan Interval dan submit secara otomatis
-                        */
-                             
-                        if(jam < 0) { 
-                            clearInterval(hitung); 
-                            /** Variable yang digunakan untuk submit secara otomatis di Form */
-                            var frmSoal = document.getElementById("frmSoal"); 
-                           alert('Maaf, Waktu pengerjaan untuk soal tes ke-1 ini telah habis, lanjut ke tes berikutnya.');
-                            frmSoal.submit(); 
-                        } 
-                    } 
-                } 
-            }           
-            /** Menjalankan Function Hitung Waktu Mundur */
-            hitung();
-        });
+              */
+              var detik   = <?= $detik; ?>;
+              var menit   = <?= $menit; ?>;
+              var jam     = <?= $jam; ?>;
+                
+               /**
+                 * Membuat function hitung() sebagai Penghitungan Waktu
+               */
+              function hitung() {
+                  /** setTimout(hitung, 1000) digunakan untuk 
+                      * mengulang atau merefresh halaman selama 1000 (1 detik) 
+                  */
+                  setTimeout(hitung,1000);
     
-    </script>
+                 /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
+                 if(menit < 1 && jam == 0){
+                       var peringatan = 'style="color:red"';
+                 };
+   
+                 /** Menampilkan Waktu Timer pada Tag #Timer di HTML yang tersedia */
+                 $('#timer').html(
+                        '<h4 align="center"'+peringatan+'>Sisa waktu anda <br />' + jam + ' jam : ' + menit + ' menit : ' + detik + ' detik</h4><hr>'
+                  );
+    
+                  /** Melakukan Hitung Mundur dengan Mengurangi variabel detik - 1 */
+                  detik --;
+   
+                  /** Jika var detik < 0
+                      * var detik akan dikembalikan ke 59
+                      * Menit akan Berkurang 1
+                  */
+                  if(detik < 0) {
+                      detik = 59;
+                      menit --;
+   
+                      /** Jika menit < 0
+                          * Maka menit akan dikembali ke 59
+                          * Jam akan Berkurang 1
+                      */
+                      if(menit < 0) {
+                          menit = 59;
+                          jam --;
+   
+                          /** Jika var jam < 0
+                              * clearInterval() Memberhentikan Interval dan submit secara otomatis
+                          */
+                          if(jam < 0) {
+                             clearInterval(); 
+                             /** Variable yang digunakan untuk submit secara otomatis di Form */
+                             var count = document.getElementById("jmrows").value; 
+                             var text = "";
+                             var i = 1;
+                              for (i = 1; i <= count; i++) { 
+                                text += "&no"+i+"="+ document.getElementById("jawaban"+i).value; 
+                                //text += "&jawab"+i;
+                              }
 
+                             alert('Maaf, Waktu pengerjaan untuk soal subtest pertama ini telah habis, lanjut ke subtest berikutnya.'), window.location = 'mulaisoal2.php?save=1'+text+"&jml="+count; 
+                        }
+                      } 
+                  } 
+              }           
+              /** Menjalankan Function Hitung Waktu Mundur */
+              hitung();
+        }); 
+        // ]]>
+      </script>
 
 </body>
 </html>
