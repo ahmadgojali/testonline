@@ -24,7 +24,7 @@
             </span>
           </a>
         </li>
-         <li class="treeview">
+         <!-- <li class="treeview">
           <a href="#">
             <i class="fa fa-reorder"></i>
             <span>Data Pelamar</span>
@@ -36,6 +36,22 @@
             <li><a href="data-user.php"><i class="fa fa-circle-o"></i> Data User</a></li>
             <li><a href="data-admin.php"><i class="fa fa-circle-o"></i> Data Admin</a></li>
           </ul>
+        </li> -->
+         <li class="treeview">
+          <a href="data-user.php">
+            <i class="fa fa-reorder"></i> <span>Data Pelamar</span>
+            <span class="pull-right-container">
+              <!-- <i class="fa fa-angle-left pull-right"></i> -->
+            </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="data-hasil.php">
+            <i class="fa fa-reorder"></i> <span>Hasil Tes</span>
+            <span class="pull-right-container">
+              <!-- <i class="fa fa-angle-left pull-right"></i> -->
+            </span>
+          </a>
         </li>
        
        <!--  <li class="treeview">

@@ -22,7 +22,7 @@
 
         if ($row2 > 0) {
 
-        $query = mysqli_query($connect, "UPDATE user SET validasi = 1, tanggal_tes = now() WHERE id = $data[id]");
+        // $query = mysqli_query($connect, "UPDATE user SET validasi = 1, tanggal_tes = now() WHERE id = $data[id]");
 
         $_SESSION['user'] = $session;
 

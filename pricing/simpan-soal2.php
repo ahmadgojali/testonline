@@ -48,8 +48,8 @@ include '../config/koneksi.php';
 
 
 
-    var_dump($kd_soal);
-    var_dump($pilihan);
+    // var_dump($kd_soal);
+    // var_dump($pilihan);
 
 
    //  $query = ("SELECT * from soal2");

@@ -5,7 +5,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; 2018 <a href="#">Ahmad Gojali</a>.</strong> All rights
+    <strong>Copyright &copy; 2018 <a href="https://www.arwanacitra.com/" target="_blank">Arwana Citramulia</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -16,6 +16,11 @@
     </div>
   </aside>
   <div class="control-sidebar-bg"></div>
+
+<!-- Scroll to Top Button-->
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-circle-up fa-lg"></i>
+  <!-- <span class="glyphicon glyphicon-chevron-up"></span> -->
+</a>
 
 <!-- jQuery 2.2.3 -->
 <script src="../assets2/plugins/jQuery/jquery-2.2.3.min.js"></script>
@@ -37,6 +42,30 @@
     if (restore) selObj.selectedIndex=0;
   }
 </script>
+
+ <!-- back-to-top -->
+  <script>
+  $(document).ready(function(){
+   $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+              $('#back-to-top').fadeIn();
+          } else {
+              $('#back-to-top').fadeOut();
+          }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+          $('#back-to-top').tooltip('hide');
+          $('body,html').animate({
+              scrollTop: 0
+          }, 800);
+          return false;
+      });
+      
+      $('#back-to-top').tooltip('show');
+
+  });
+  </script>
 
 <!-- page script -->
 <script>

@@ -1,3 +1,17 @@
+<?php
+session_start();
+include '../config/koneksi.php';
+  if(isset($_SESSION['admin'])){
+    $session = $_SESSION['admin'];
+    $query   = mysqli_query($connect, "SELECT * FROM admin WHERE id ='$session'") or die (mysql_error());
+    $data    = mysqli_fetch_array($query);
+  }
+  
+  else{
+    header("location:../login.php");
+  }
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,6 +74,18 @@
   }
   </style>
 
+  
+  <!-- back to top css -->
+  <style>
+    .back-to-top {
+      cursor: pointer;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display:none;
+  }
+  </style>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -93,7 +119,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../assets2/images/man.png" class="user-image" alt="User Image">
               
-              <span class="hidden-xs">Ali</span>
+              <span class="hidden-xs"><?= $data['nama'] ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -101,15 +127,15 @@
                <img src="../assets2/images/man.png" class="img-circle" alt="User Image">                
 
                 <p>
-                  Ali
-                  <small>Admin</small>
+                  <?= $data['nama'] ?>
+                  <small><?= $data['level'] ?></small>
                 </p>
               </li>
              
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="?page=profile" class="btn btn-info btn-flat"><i class="fa fa-lg fa-user"></i>&nbsp; Profile</a>
+                  <a href="#" class="btn btn-info btn-flat"><i class="fa fa-lg fa-user"></i>&nbsp; Profile</a>
                 </div>
                 <div class="pull-right">
                   <a href="logout.php" class="btn btn-danger btn-flat"><i class="fa fa-lg fa-power-off"></i>&nbsp; Logout</a>

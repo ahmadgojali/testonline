@@ -34,9 +34,9 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">Login sebagai Administrator</p>
 
-    <form action="login-user.php" method="post" enctype="multipart/form-data">
+    <form action="login-admin.php" method="post" enctype="multipart/form-data">
       <div class="form-group has-feedback">
         <label for="username">Email</label>
         <input type="username" class="form-control" name="username" id="username" placeholder="Email">
