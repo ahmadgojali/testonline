@@ -47,7 +47,7 @@
         </li>
         <li class="treeview">
           <a href="data-hasil.php">
-            <i class="fa fa-reorder"></i> <span>Hasil Tes</span>
+            <i class="fa fa-reorder"></i> <span>Data Hasil Ujian</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>

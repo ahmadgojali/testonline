@@ -11,6 +11,7 @@ include '../config/koneksi.php';
     header("location:../index.php");
   }
 
+
 ?>
 
 <?php include 'templates/header.php'; ?>
@@ -22,7 +23,7 @@ include '../config/koneksi.php';
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Ujian Online</h1>
+  <h1 class="display-4">Deret Angka</h1>
   <p class="lead">Selamat Datang di Sistem Recruitment Online PT Arwana Citramulia Tbk </p>
 </div>
 <div class="row">
@@ -33,13 +34,13 @@ include '../config/koneksi.php';
   <div class="col-8">
     <div class="card text-center">
       <div class="card-header lead">
-       Petunjuk Pengerjaan Tes 4
+       Petunjuk Pengerjaan Tes 3
       </div>
       <div class="card-body">
-         <p class="lead">Pada test keempat Anda diminta untuk melakukan 2 hal. <br> Pertama adalah soal silogisme Anda diminta untuk mencari sinonim atau antonim dari suatu kata. <br> Yang kedua adalah Anda diminta untuk membaca diagram/tabel.</p>
+         <p class="lead">Test ketiga adalah soal deret angka. <br> Tugas Anda adalah meneruskan deret angka yang ada.  <br> Caranya Anda harus menemukan dulu pola yang terbentuk dari angka - angka sebelumnya. <br> Contoh: 1 2 3 4 5 6 7 8 9 10 11 12 <i><b>11 12</b></i></p>
       </div>
       <div class="card-footer text-muted">
-       <a href="soal4.php" class="btn btn-primary">Mulai</a>
+       <a href="soal3.php" class="btn btn-primary">Mulai</a>
       </div>
     </div>
   </div>

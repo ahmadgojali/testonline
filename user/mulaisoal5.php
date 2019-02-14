@@ -11,7 +11,6 @@ include '../config/koneksi.php';
     header("location:../index.php");
   }
 
-
 ?>
 
 <?php include 'templates/header.php'; ?>
@@ -23,9 +22,10 @@ include '../config/koneksi.php';
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Ujian Online</h1>
+  <h1 class="display-4">Bahasa Inggris</h1>
   <p class="lead">Selamat Datang di Sistem Recruitment Online PT Arwana Citramulia Tbk </p>
 </div>
+
 <div class="row">
   <div class="col-md-2">
      
@@ -34,13 +34,13 @@ include '../config/koneksi.php';
   <div class="col-8">
     <div class="card text-center">
       <div class="card-header lead">
-       Petunjuk Pengerjaan Tes 3
+       Petunjuk Pengerjaan Tes 5
       </div>
-      <div class="card-body">
-         <p class="lead">Test ketiga adalah soal deret angka. <br> Tugas Anda adalah meneruskan deret angka yang ada.  <br> Caranya Anda harus menemukan dulu pola yang terbentuk dari angka - angka sebelumnya. <br> Contoh: 1 2 3 4 5 6 7 8 9 10 11 12 <i><b>11 12</b></i></p>
+      <div class="card-body lead">
+         <p class="lead">The last test is English. There are two types of question.<br> The first one is multiple choices. <br> You just have to fill the blank with the right answer. <br> The second one is a passage. You have to read the passage before you can answer the question. </br>  Good luck!</p>
       </div>
       <div class="card-footer text-muted">
-       <a href="soal3.php" class="btn btn-primary">Mulai</a>
+       <a href="soal5.php" class="btn btn-primary">Mulai</a>
       </div>
     </div>
   </div>

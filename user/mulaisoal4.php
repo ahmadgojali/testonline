@@ -22,10 +22,9 @@ include '../config/koneksi.php';
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Ujian Online</h1>
+  <h1 class="display-4">Silogisme</h1>
   <p class="lead">Selamat Datang di Sistem Recruitment Online PT Arwana Citramulia Tbk </p>
 </div>
-
 <div class="row">
   <div class="col-md-2">
      
@@ -34,13 +33,13 @@ include '../config/koneksi.php';
   <div class="col-8">
     <div class="card text-center">
       <div class="card-header lead">
-       Petunjuk Pengerjaan Tes 5
+       Petunjuk Pengerjaan Tes 4
       </div>
-      <div class="card-body lead">
-         <p class="lead">The last test is English. There are two types of question.<br> The first one is multiple choices. <br> You just have to fill the blank with the right answer. <br> The second one is a passage. You have to read the passage before you can answer the question. </br>  Good luck!</p>
+      <div class="card-body">
+         <p class="lead">Pada test keempat Anda diminta untuk melakukan 2 hal. <br> Pertama adalah soal silogisme Anda diminta untuk mencari sinonim atau antonim dari suatu kata. <br> Yang kedua adalah Anda diminta untuk membaca diagram/tabel.</p>
       </div>
       <div class="card-footer text-muted">
-       <a href="soal5.php" class="btn btn-primary">Mulai</a>
+       <a href="soal4.php" class="btn btn-primary">Mulai</a>
       </div>
     </div>
   </div>

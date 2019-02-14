@@ -2,7 +2,7 @@
 <?php include 'templates/sidebar.php'; ?>
 
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <!-- <section class="content-header">
       <h1>
         Edit Data User
         <small>ARNA</small></br>
@@ -13,7 +13,7 @@
         <li><a href="#">Form</a></li>
         <li class="active">Edit User</li>
       </ol>
-    </section>
+    </section> -->
 
     <?php
       include '../config/koneksi.php';

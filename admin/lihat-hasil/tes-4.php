@@ -32,7 +32,7 @@
                 ?>
 
                 <div class="box-body">
-                  <div class="text-center lead"><b>Jawaban Tes 4 Silogisme</b></div><hr>
+                  <div class="text-center lead"><b>Hasil Tes 4 Silogisme</b></div><hr>
                   <div class="col-md-12 col-md-offset-0">
                   <div class="lead"><b><i>Data Pelamar</i></b></div><hr>
                   <table class=" lead">                    
@@ -79,10 +79,10 @@
                       // var_dump($jml_benar);
                    ?>
 
-                  <div class="lead"><b><i>Jawaban Pelamar</i></b></div>
+                  <div class="lead"><b><i>Jawaban Pelamar</i></b></div><hr>
                    <div class="lead">
                       <table>
-                      <tr>
+                     <!--  <tr>
                         <td>Keterangan &nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td>:</td>
                         <td> &nbsp;&nbsp;&nbsp;&nbsp; Benar <font color="green" >&nbsp;&nbsp;<i class="fa fa-lg  fa-check"></i></font></td>
@@ -91,22 +91,22 @@
                         <td> &nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td></td>
                         <td> &nbsp;&nbsp;&nbsp;&nbsp; Salah <font color="red" >&nbsp;&nbsp;<i class="fa fa-lg  fa-close"></i></font></td> 
+                      </tr> -->
+                       <tr>
+                        <td>Jumlah Benar &nbsp;&nbsp;&nbsp;&nbsp; </b></td>
+                        <td>:</b></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp; <?= $jml_benar; ?></b></td>
                       </tr>
-                    </table><hr>
-                      <tr>
-                        <td><b>Jumlah Benar &nbsp;&nbsp;&nbsp;&nbsp; </b></td>
-                        <td><b>:</b></td>
-                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp; <?= $jml_benar; ?></b></td>
-                      </tr>
-                    
+                    </table>
                    </div>
+                   <div class="text-center lead"><b><i>Tabel Tes 4 Silogisme</i></b></div>
                   <table id="" class="table table-bordered table-hover">
                     <thead>
                     <tr>
                       <th class="lead " width="10"  >No</th>
                       <th   class="lead">Jawaban</th>
-                      <th  class="lead">Jawaban Benar</th>
-                      <th  class="text-center lead" >Hasil</th>                                                   
+                      <th  class="lead">Kunci Jawaban</th>
+                      <th  class="text-center lead" >Keterangan</th>                                                   
                     </tr>
                     </thead>
                     <tbody>

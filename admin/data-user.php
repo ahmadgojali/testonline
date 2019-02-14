@@ -4,7 +4,7 @@
 <style type="text/css"> .tombol-kanan {margin-top: 1px; margin-right: 5px; float: right;}</style>
 
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <!-- <section class="content-header">
       <h1>
         Data User
         <small>ARNA</small></br>
@@ -15,7 +15,7 @@
         <li><a href="#">Tabel</a></li>
         <li class="active">Data User</li>
       </ol>
-    </section>
+    </section> -->
 
     <!-- Main content -->
     <section class="content">

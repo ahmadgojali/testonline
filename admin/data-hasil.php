@@ -23,7 +23,7 @@
         <div class="col-xs-12">  
         
         <!-- START CUSTOM TABS -->
-        <h2 class="page-header">Arwana Citramulia</h2>
+        <!-- <h2 class="page-header">Arwana Citramulia</h2> -->
 
         <div class="row">
           <div class="col-md-12">

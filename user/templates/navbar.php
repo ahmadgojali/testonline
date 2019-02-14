@@ -1,5 +1,5 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-1 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 ml-md-4 mr-md-auto font-weight-normal">Arwana Citramulia Tbk</h5>
+  <h5 class="my-0 ml-md-4 mr-md-auto font-weight-normal">Arwana Citramulia</h5>
   <!-- <img src="../assets/img/logo-header.png" alt="" width="200px" height="50px"> -->
 
 

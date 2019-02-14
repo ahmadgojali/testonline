@@ -18,7 +18,7 @@ include '../config/koneksi.php';
     $jml_soal = mysqli_num_rows($hasil);
 
     $kd_soal = $_POST["id"];
-    $pilihan = $_POST["pilihan"];
+    $pilihan = @$_POST["pilihan"];
 
     if(isset($_SESSION['user'])){
       $session = $_SESSION['user'];

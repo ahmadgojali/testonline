@@ -2,7 +2,7 @@
 <?php include 'templates/sidebar.php'; ?>
 
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <!-- <section class="content-header">
       <h1>
         Tambah Data User
         <small>ARNA</small></br>
@@ -13,7 +13,7 @@
         <li><a href="#">Form</a></li>
         <li class="active">Tambah User</li>
       </ol>
-    </section>
+    </section> -->
 
     <!-- Main content -->
     <section class="content">

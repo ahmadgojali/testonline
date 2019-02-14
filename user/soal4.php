@@ -24,7 +24,7 @@ else{
         $telah_berlalu      = 0;
     } 
  
-    $temp_waktu = (0.5*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (2*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -84,18 +84,27 @@ else{
               $pilihan_c  = $row["pilihan_c"];
               $pilihan_d  = $row["pilihan_d"];                     
               $pilihan_e  = $row["pilihan_e"];                     
-              $jawaban    = $row["jawaban"];
+              $jawaban    = $row["kunci_jawaban"];
               $gambar     = $row["gambar"];                      
               ?>
 
-            
+             
+
             <div class="row">
               <div class="col-md-12 ml-5">
-             
+                
                 <!-- gambar -->
-                <div class="img-responsive">
-                  <img src="assets/img-soal/<?= $gambar ?>" width="700px">
-                </div>
+                <?php if (empty($gambar)) {
+                  echo ""; 
+                } else {
+                  echo '
+                    <div class="img-responsive">
+                      <img src="assets/img-soal/'.$gambar.'" width="700px">
+                    </div>
+                    ';
+                }
+                ?>
+                
                 <!-- no dan soal -->
                 <table>
                   <tr>

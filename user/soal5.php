@@ -85,7 +85,7 @@ else{
               $pilihan_c  = $row["pilihan_c"];
               $pilihan_d  = $row["pilihan_d"];                     
               $pilihan_e  = $row["pilihan_e"];                     
-              $jawaban    = $row["jawaban"];                     
+              $jawaban    = $row["kunci_jawaban"];                     
             ?>
 
             

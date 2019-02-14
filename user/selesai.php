@@ -22,35 +22,15 @@ include '../config/koneksi.php';
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Ujian Online</h1>
-  <p class="lead">Selamat Datang di Sistem Recruitment Online PT Arwana Citramulia Tbk </p>
+  <h1 class="display-4">Terimakasih ..</h1>
+  <p class="lead">Terimakasih kepada bapak/ibu sudah meluangkan waktu untuk menyelesaikan tes ini, semoga hasilnya memuaskan. </p>
 </div>
 
-<div class="row">
-  <div class="col-md-2">
-     
-  </div>
-
-  <div class="col-8">
-    <div class="card text-center">
-      <div class="card-header lead">
-       Petunjuk Pengerjaan Tes 1
-      </div>
-      <div class="card-body">
-        <p class="lead">Test berikut adalah test hitungan. <br> Tugas Anda mudah Anda hanya tinggal mengerjakan soal hitungan tersebut. <br> Anda tidak diperkenankan untuk mengunakan alat bantu hitung. <br> Kerjakan secepat mungkin sebelum waktunya selesai.</p>
-      </div>
-      <div class="card-footer text-muted">
-       <a href="soal1.php" class="btn btn-primary">Mulai</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-2">
-     
-  </div>
-</div>
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
