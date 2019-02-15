@@ -34,7 +34,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">Login sebagai User</p>
 
     <form action="login-user.php" method="post" enctype="multipart/form-data">
       <div class="form-group has-feedback">

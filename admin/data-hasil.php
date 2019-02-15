@@ -43,6 +43,15 @@
                   <div class="box box-danger">
                     <div class="box-header with-border">
                       <h3 class="box-title ">Data Hasil Tes 5 Bahasa Inggris</h3>
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="search_tes5" id="search_tes5" class="form-control pull-right" placeholder="Search">
+
+                          <div class="input-group-btn">
+                            <button type="submit" name="tes5" id="tes5" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
                         <div class="tombol-kanan">
                           <!-- <a href="tambah-user.php" class="btn btn-default btn-sm">&nbsp;<i class="fa fa-lg  fa-user"></i>&nbsp; Tambah User&nbsp;</a> -->
                           <!-- <a href="?page=tambah_penyakit" class="btn btn-danger btn-sm">&nbsp;<i class="fa fa-lg fa-plus"></i> Tambah Penyakit</a> -->
@@ -109,6 +118,15 @@
                       </table>
                     </div>
                     <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                      <ul class="pagination pagination-sm no-margin pull-right">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <!-- /.box -->
                 </div>
@@ -117,6 +135,15 @@
                   <div class="box box-warning">
                     <div class="box-header with-border">
                       <h3 class="box-title ">Data Hasil Tes 4 Silogisme</h3>
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="search_tes4" id="search_tes4" class="form-control pull-right" placeholder="Search">
+
+                          <div class="input-group-btn">
+                            <button type="submit" name="tes4" id="tes4" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
                         <div class="tombol-kanan">
           
                         </div>
@@ -166,6 +193,15 @@
                       </table>
                     </div>
                     <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                      <ul class="pagination pagination-sm no-margin pull-right">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <!-- /.box -->
                 </div>
@@ -175,6 +211,15 @@
                    <div class="box box-success">
                     <div class="box-header with-border">
                       <h3 class="box-title ">Data Hasil Tes 3 Deret Angka</h3>
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="search_tes3" id="search_tes3" class="form-control pull-right" placeholder="Search">
+
+                          <div class="input-group-btn">
+                            <button type="submit" name="tes3" id="tes3" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
                         <div class="tombol-kanan">
           
                         </div>
@@ -224,6 +269,15 @@
                       </table>
                     </div>
                     <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                      <ul class="pagination pagination-sm no-margin pull-right">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <!-- /.box -->
                 </div>
@@ -233,6 +287,15 @@
                    <div class="box box-info">
                     <div class="box-header with-border">
                       <h3 class="box-title ">Data Hasil Tes 2 Hubungan Kata</h3>
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="search_tes2" id="search_tes2" class="form-control pull-right" placeholder="Search">
+
+                          <div class="input-group-btn">
+                            <button type="submit" name="tes2" id="tes2" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
                         <div class="tombol-kanan">
           
                         </div>
@@ -282,6 +345,15 @@
                       </table>
                     </div>
                     <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                      <ul class="pagination pagination-sm no-margin pull-right">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <!-- /.box -->
                 </div>
@@ -291,6 +363,15 @@
                   <div class="box box-primary">
                     <div class="box-header with-border">
                       <h3 class="box-title ">Data Hasil Tes 1 Matematika Dasar</h3>
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="search_tes1" id="search_tes1" class="form-control pull-right" placeholder="Search">
+
+                          <div class="input-group-btn">
+                            <button type="submit" name="tes1" id="tes1" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
                         <div class="tombol-kanan">
           
                         </div>
@@ -298,7 +379,7 @@
                    
                     <!-- /.box-header -->
                     <div class="box-body">
-                      <table id="example1" class="table table-bordered table-striped">
+                      <table id="" class="table table-bordered table-striped">
                         <thead>
                         <tr>
                           <th   >No</th>
@@ -340,6 +421,15 @@
                       </table>
                     </div>
                     <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                      <ul class="pagination pagination-sm no-margin pull-right">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <!-- /.box -->
                 </div>
@@ -355,11 +445,11 @@
         <!-- END CUSTOM TABS -->
 
 
-        </div>
-        <!-- /.col -->
       </div>
-      <!-- /.row -->
-    </section>
-    <!-- /.content -->
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </section>
+  <!-- /.content -->
 
 <?php include 'templates/footer.php'; ?>

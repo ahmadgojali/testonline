@@ -43,6 +43,9 @@
                   $id_user   = $_GET['id_user'];
 
                    $query = "SELECT user.*, jawaban_tes1.*, soal1.* from user, jawaban_tes1, soal1 where soal1.id = jawaban_tes1.id_soal and user.id = $id_user ";
+
+                  // SELECT user.*, jawaban_tes1.*, soal1.* from user, jawaban_tes1, soal1 where user.id = jawaban_tes1.id_user and soal1.id = jawaban_tes1.id_soal and jawaban_tes1.id_user = 1
+
                   $hasil  = mysqli_query($connect, $query);
                   $data    = mysqli_fetch_array($hasil);     
 

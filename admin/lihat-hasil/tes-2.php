@@ -101,7 +101,7 @@
                       
                     
                    </div>
-                    <div class="text-center lead"><b><i>Tabel Tes 2 Hubungan Kata</i></b></div><hr>
+                    <div class="text-center lead"><b><i>Tabel Tes 2 Hubungan Kata</i></b></div>
                   <table id="" class="table table-bordered table-hover">
                     <thead>
                     <tr>
