@@ -34,7 +34,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-user"></i>
                       </div>
-                      <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap" required>
+                      <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap" autocomplete="off" required>
                     </div>
                     </div>
                   </div>
@@ -45,11 +45,31 @@
                       <div class="input-group-addon">
                         <i class="fa fa-key"></i>
                       </div>
-                      <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Username" autocomplete="off" required  >
                       <!-- <input type="text" class="form-control" id="username" name="username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,12}$" title="alfanumerik 6 hingga 12 karakter tidak boleh ada spasi" placeholder="Username" required> -->
                     </div>
                     </div>
                   </div>
+                  
+                  
+                  <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label"> &nbsp;Password</label>
+                    <div class="col-sm-7">
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <i class="fa fa-lock"></i>
+                        </div>
+                       <input type="text" class="form-control" id="password" name="password" readonly="">
+                      </div>
+                       <div >
+                          <!-- <button id="generate" class="btn btn-default" > &nbsp;&nbsp;Generate Password</button>   -->
+                          <!-- <span id="tampil">
+                            &nbsp;&nbsp;&nbsp;&nbsp; Your Password : <?= $password; ?>
+                          </span> -->
+                        </div>
+                    </div>
+                  </div>
+                   
                   <!-- <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password &nbsp;*</label>
                     <div class="col-sm-7">
@@ -102,7 +122,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-envelope"></i>
                       </div>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="xyz@gmail.com" required>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="xyz@gmail.com" autocomplete="off" required>
                       <!-- <input type="email" class="form-control" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@gmail.com" placeholder="xyz@gmail.com" required> -->
                     </div>
                     </div>
@@ -114,7 +134,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-calendar"></i>
                       </div>
-                      <input type="numeric" class="form-control" id="umur" name="umur" placeholder="Umur Anda" required>
+                      <input type="number" class="form-control" id="umur" name="umur" placeholder="Umur Anda" autocomplete="off" required>
                     </div>
                     </div>
                   </div>
@@ -135,7 +155,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-phone"></i>
                       </div>
-                      <input type="tel" class="form-control" id="no_telp" name="no_telp" placeholder="Nomor Telepon" required>
+                      <input type="number" class="form-control" id="no_telp" name="no_telp" placeholder="Nomor Telepon" autocomplete="off" required>
                     </div>
                   </div>
                 </div>
@@ -146,7 +166,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-graduation-cap"></i>
                       </div>
-                      <input type="text" class="form-control" id="pendidikan" name="pendidikan" placeholder="Pendidikan Terakhir" required>
+                      <input type="text" class="form-control" id="pendidikan" name="pendidikan" placeholder="Pendidikan Terakhir"  autocomplete="off" required>
                     </div>
                   </div>
                 </div>
@@ -178,7 +198,7 @@
                 </div>
              
                     <div class="box-footer">
-                      <button type="reset" name="reset" class="btn btn-default"><i class="fa  fa-refresh"></i> &nbsp;Batal</button>
+                      <button type="reset" name="reset" class="btn btn-default"><i class="fa  fa-refresh"></i> &nbsp;Reset</button>
                       <button type="submit" name="submit" class="btn btn-info pull-right" onClick="ValidateForm(this.form)"><i class="fa fa-save"></i> &nbsp;Simpan</button>
                     </div>
                    
@@ -191,8 +211,8 @@
           </div>
         </section>
 
-
 		<?php include 'templates/footer.php'; ?>
+    
 
        <?php
         include "../config/koneksi.php";
@@ -203,22 +223,23 @@
           $email          = $_POST['email'];
           $username       = ucwords($_POST['username']);
           // $password       = ucwords($_POST['password']);
+          $password       = $_POST['password'];
           $umur       	  = ucwords($_POST['umur']);
           $no_telp        = $_POST['no_telp'];
           $pendidikan     = ucwords($_POST['pendidikan']);
 
-          function randomPassword() {
-              $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
-              $pass = array(); //remember to declare $pass as an array
-              $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
-              for ($i = 0; $i < 8; $i++) {
-                  $n = rand(0, $alphaLength);
-                  $pass[] = $alphabet[$n];
-              }
-              return implode($pass); //turn the array into a string
-          }
+          // function randomPassword() {
+          //     $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+          //     $pass = array(); //remember to declare $pass as an array
+          //     $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+          //     for ($i = 0; $i < 8; $i++) {
+          //         $n = rand(0, $alphaLength);
+          //         $pass[] = $alphabet[$n];
+          //     }
+          //     return implode($pass); //turn the array into a string
+          // }
 
-          $password = randomPassword();
+          // $password = randomPassword();
 
 
 	      // Proses simpan data ke Database

@@ -37,10 +37,12 @@ include '../config/koneksi.php';
       @$jawaban = $_POST['jawaban']; 
 
        if ($jawaban == $jwb_benar) {
-        $alert = '<div class="alert alert-success" role="alert">
-                    <center>Jawaban anda benar, karena Darimana asal kamu? = Where are you from?, anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
-                  </div>';
-         $tombol = '<a href="soal5.php" class="btn btn-success">Mulai</a>';
+        // $alert = '<div class="alert alert-success" role="alert">
+        //             <center>Jawaban anda benar, karena Darimana asal kamu? = Where are you from?, anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
+        //           </div>';
+        //  $tombol = '<a href="soal5.php" class="btn btn-success">Mulai</a>';
+
+        echo "<script language='javascript'> window.location = 'soal5.php';</script>";
 
       } else {
         $alert = '<div class="alert alert-danger" role="alert">
@@ -63,10 +65,10 @@ include '../config/koneksi.php';
        Petunjuk Pengerjaan Tes 5
       </div>
       <div class="card-body lead">
-         <p class="lead">The last test is English. There are two types of question.<br> The first one is multiple choices. <br> You just have to fill the blank with the right answer. <br> The second one is a passage. You have to read the passage before you can answer the question. </br>  Good luck!</p>
+         <p class="lead">The last test is English. There are two types of question.<br> The first one is multiple choices. <br> You just have to fill the blank with the right answer. <br> The second one is a passage. You have to read the passage before you can answer the question. </br> Working time is <b>5 minutes</b> <br> Good luck!</p>
       </div>
       <div class="card-footer text-muted">
-        <?= @$tombol; ?>
+       <!--  <?= @$tombol; ?> -->
        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Latihan</button>
       </div>
     </div>
@@ -114,7 +116,7 @@ include '../config/koneksi.php';
                           <h1 class="lead">1. &nbsp;&nbsp;</h1>
                         </td>
                         <td>
-                          <h1 class="lead">Darimana asal kamu?</h1>
+                          <h1 class="lead">My uncle .... To the pub every night</h1>
                         </td>
                       </tr>
                     </table>
@@ -123,7 +125,7 @@ include '../config/koneksi.php';
                       <div class="ml-4">
                         <label>
                           <input type="radio" name="jawaban" value="A" class="icek">
-                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;A. &nbsp;Where are you from?</span>
+                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;A. &nbsp;Go</span>
 
                         </label>
                       </div>
@@ -133,7 +135,7 @@ include '../config/koneksi.php';
                       <div class="ml-4">
                         <label>
                           <input type="radio" name="jawaban" value="B" class="icek">
-                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;B. &nbsp;What is your from?</span>
+                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;B. &nbsp;Goes</span>
                         </label>
                       </div>
                       </tr>
@@ -142,7 +144,7 @@ include '../config/koneksi.php';
                       <div class="ml-4">
                         <label>
                           <input type="radio" name="jawaban" value="C" class="icek">
-                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;C. &nbsp;What from are you?</span>
+                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;C. &nbsp;Gone</span>
                         </label>
                       </div>
                       </tr>
@@ -151,18 +153,18 @@ include '../config/koneksi.php';
                       <div class="ml-4">
                         <label>
                           <input type="radio" name="jawaban" value="D" class="icek">
-                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;What from you?</span>
+                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;D. &nbsp;Went</span>
                         </label>
                       </div>
                       </tr>
-                      <tr>
+                      <!-- <tr>
                       <div class="ml-4">
                         <label>
                           <input type="radio" name="jawaban" value="E" class="icek">
-                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;E. &nbsp;What you from?</span>
+                          <span class="label-text lead">&nbsp;&nbsp;&nbsp;&nbsp;E. &nbsp;Juice</span>
                         </label>
                       </div>
-                      </tr>
+                      </tr> -->
                   </div>
                 </div>
                 <div class="float-right mr-md-5 mb-3">

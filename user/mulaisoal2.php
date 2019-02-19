@@ -52,10 +52,12 @@ include '../config/koneksi.php';
       @$jawaban = $_POST['jawaban']; 
 
        if ($jawaban == $jwb_benar) {
-        $alert = '<div class="alert alert-success" role="alert">
-                    <center>Jawaban anda benar, karena Mawar : Merah = Melati : <i>Putih</i> , anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
-                  </div>';
-         $tombol = '<a href="soal2.php" class="btn btn-success">Mulai</a>';
+        // $alert = '<div class="alert alert-success" role="alert">
+        //             <center>Jawaban anda benar, karena Mawar : Merah = Melati : <i>Putih</i> , anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
+        //           </div>';
+        //  $tombol = '<a href="soal2.php" class="btn btn-success">Mulai</a>';
+
+        echo "<script language='javascript'> window.location = 'soal2.php';</script>";
 
       } else {
         $alert = '<div class="alert alert-danger" role="alert">
@@ -77,10 +79,10 @@ include '../config/koneksi.php';
        Petunjuk Pengerjaan Tes 2
       </div>
       <div class="card-body">
-       <p class="lead">Test berikut adalah soal hubungan kata. <br> Tugas anda adalah mencari kata keempat yang hilang. <br> Caranya Anda harus menemukan dulu hubungan kata pertama dan kata kedua. <br> Contoh: Mawar : Merah = Melati : <i><b>Putih</b></i></p>
+       <p class="lead">Test berikut adalah soal hubungan kata. <br> Tugas anda adalah mencari kata keempat yang hilang. <br> Caranya Anda harus menemukan dulu hubungan kata pertama dan kata kedua. <br> Waktu pengerjaan <b>6 menit</b>
       </div>
       <div class="card-footer text-muted">
-       <?= @$tombol; ?>
+       <!-- <?= @$tombol; ?> -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Latihan</button>
       </div>
     </div>

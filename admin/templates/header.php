@@ -18,7 +18,7 @@ include '../config/koneksi.php';
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Halaman Administrator - Arwana Citra</title>
-  <link rel="shortcut icon" href="../assets2/images/man.png">
+  <link rel="shortcut icon" href="../assets/img/arna-logo.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -100,7 +100,7 @@ include '../config/koneksi.php';
     <!-- Logo -->
     <a href="?page=home" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>AD</b></span>
+      <span class="logo-mini"><b>HR</b></span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>ADMINISTRATOR</b> </span>
     </a>
@@ -117,17 +117,19 @@ include '../config/koneksi.php';
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../assets2/images/man.png" class="user-image" alt="User Image">
+              <i class="fa fa-lg fa-user"></i>
+              <!-- <img src="../assets/img/arna-logo.png" class="user-image" alt="User Image"> -->
               
-              <span class="hidden-xs"><?= $data['nama'] ?></span>
+              <span class="hidden-xs"><!-- <?= $data['nama'] ?> -->Recruiter Arna</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-               <img src="../assets2/images/man.png" class="img-circle" alt="User Image">                
+               <img src="../assets/img/arna-logo.png" class="" alt="User Image">                
 
                 <p>
-                  <?= $data['nama'] ?>
+                  <!-- <?= $data['nama'] ?> -->
+                  Recruiter Arna
                   <small><?= $data['level'] ?></small>
                 </p>
               </li>

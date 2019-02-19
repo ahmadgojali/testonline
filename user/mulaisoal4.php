@@ -36,10 +36,12 @@ include '../config/koneksi.php';
       @$jawaban = $_POST['jawaban']; 
 
        if ($jawaban == $jwb_benar) {
-        $alert = '<div class="alert alert-success" role="alert">
-                    <center>Jawaban anda benar, karena Baik > Buruk, anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
-                  </div>';
-         $tombol = '<a href="soal4.php" class="btn btn-success">Mulai</a>';
+        // $alert = '<div class="alert alert-success" role="alert">
+        //             <center>Jawaban anda benar, karena Baik > Buruk, anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
+        //           </div>';
+        //  $tombol = '<a href="soal4.php" class="btn btn-success">Mulai</a>';
+
+        echo "<script language='javascript'> window.location = 'soal4.php';</script>";
 
       } else {
         $alert = '<div class="alert alert-danger" role="alert">
@@ -61,10 +63,10 @@ include '../config/koneksi.php';
        Petunjuk Pengerjaan Tes 4
       </div>
       <div class="card-body">
-         <p class="lead">Pada test keempat Anda diminta untuk melakukan 2 hal. <br> Pertama adalah soal silogisme Anda diminta untuk mencari sinonim atau antonim dari suatu kata. <br> Yang kedua adalah Anda diminta untuk membaca diagram/tabel.</p>
+         <p class="lead">Pada test keempat Anda diminta untuk melakukan 2 hal. <br> Pertama adalah soal silogisme Anda diminta untuk mencari sinonim atau antonim dari suatu kata. <br> Yang kedua adalah Anda diminta untuk membaca diagram/tabel. <br> Waktu pengerjaan <b>5 menit</b></p>
       </div>
       <div class="card-footer text-muted">
-         <?= @$tombol; ?>
+        <!--  <?= @$tombol; ?> -->
        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Latihan</button>
       </div>
     </div>

@@ -45,10 +45,12 @@ include '../config/koneksi.php';
 
 
       if ($jawaban1 == $jwb_benar1 && $jawaban2 == $jwb_benar2) {
-        $alert = '<div class="alert alert-success" role="alert">
-                    <center>Jawaban anda benar, karena 7 dan 8 adalah lanjutan dari angka sebelumnya , anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
-                  </div>';
-         $tombol = '<a href="soal3.php" class="btn btn-success">Mulai</a>';
+        // $alert = '<div class="alert alert-success" role="alert">
+        //             <center>Jawaban anda benar, karena 7 dan 8 adalah lanjutan dari angka sebelumnya , anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
+        //           </div>';
+        //  $tombol = '<a href="soal3.php" class="btn btn-success">Mulai</a>';
+
+        echo "<script language='javascript'> window.location = 'soal3.php';</script>";
 
       } else {
         $alert = '<div class="alert alert-danger" role="alert">
@@ -71,7 +73,7 @@ include '../config/koneksi.php';
        Petunjuk Pengerjaan Tes 3
       </div>
       <div class="card-body">
-         <p class="lead">Test ketiga adalah soal deret angka. <br> Tugas Anda adalah meneruskan deret angka yang ada.  <br> Caranya Anda harus menemukan dulu pola yang terbentuk dari angka - angka sebelumnya. <br> Contoh: 1 2 3 4 5 6 7 8 9 10  <i><b>11 12</b></i></p>
+         <p class="lead">Test ketiga adalah soal deret angka. <br> Tugas Anda adalah meneruskan deret angka yang ada. <br> Caranya Anda harus menemukan dulu pola yang terbentuk dari angka - angka sebelumnya. <br> Waktu pengerjaan <b>9 menit</b>
       </div>
       <div class="card-footer text-muted">
        <?= @$tombol; ?>
@@ -132,14 +134,14 @@ include '../config/koneksi.php';
                   </div>
                   <div class="col-md-5">
                     <div class="row">
-                      <div class="col-md-3">
+                      <div class="col-md-4">
                         <div class="form-group">
-                          <input type="text" name="jawaban1" value="" class="form-control"  placeholder="">
+                          <input type="text"  onkeypress='validate(event)' name="jawaban1" value="" class="form-control"  placeholder="" autocomplete="off">
                         </div>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-4">
                         <div class="form-group">
-                          <input type="text" name="jawaban2" value="" class="form-control"  placeholder="">
+                          <input type="text"  onkeypress='validate(event)' name="jawaban2" value="" class="form-control"  placeholder="" autocomplete="off">
                         </div>
                       </div>
                     </div>
@@ -150,7 +152,7 @@ include '../config/koneksi.php';
                 <!-- col 12 -->
               </div>
               <!-- row -->
-            </div>
+            </div><br>
             <div class="float-right mr-md-5 mb-3">
                <input type="submit" name="latihan" id="submit" class="btn btn-success" value="Submit">
             </div>
@@ -187,6 +189,28 @@ function timestamp() {
   });
 }
 </script>
+
+<!-- fungsi validasi angka dan operator mtk -->
+<script>
+  function validate(evt) {
+  var theEvent = evt || window.event;
+
+    // Handle paste
+    if (theEvent.type === 'paste') {
+        key = event.clipboardData.getData('text/plain');
+    } else {
+    // Handle key press
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+    }
+    var regex = /[0-9+-/*]|\./;
+    if( !regex.test(key) ) {
+      theEvent.returnValue = false;
+      if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+  }
+</script>
+<!-- fungsi validasi angka dan operator mtk -->
 
 <!-- hide/show button -->
 <!-- <script>

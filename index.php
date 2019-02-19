@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Arwana Citramulia | Login</title>
+  <link rel="shortcut icon" href="assets/img/arna-logo.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -30,16 +31,18 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
+   <!--  <img src="assets/img/arna-logo.png" alt="" width="100px" height="100px"><br> -->
     <a href=""><b>Arwana</b> Citramulia</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Login sebagai User</p>
+    <center><img src="assets/img/arna-logo.png" alt="" width="100px" height="80px"><br></center>
+    <!-- <p class="login-box-msg">Login sebagai User</p> -->
 
     <form action="login-user.php" method="post" enctype="multipart/form-data">
       <div class="form-group has-feedback">
-        <label for="username">Email</label>
-        <input type="username" class="form-control" name="username" id="username" placeholder="Email">
+        <label for="username">Username</label>
+        <input type="username" class="form-control" name="username" id="username" placeholder="Username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -60,7 +63,10 @@
           <button type="submit" name="login" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->
-      </div><br>
+      </div><hr>
+      <div class="text-right">
+        Login sebagai Admin<a href="login.php"> disini</a>
+      </div>
     </form>
 
    <!--  <div class="social-auth-links text-center">

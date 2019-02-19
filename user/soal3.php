@@ -24,7 +24,7 @@ else{
         $telah_berlalu      = 0;
     } 
  
-    $temp_waktu = (0.5*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (9*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -47,7 +47,7 @@ else{
 
   <div class="card-deck  px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <!-- timer -->
-    <div class="col-md-3">
+    <div class="col-md-3" id="timer-posisi">
        <div class="card mb-4 shadow-sm">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal text-center">Timer (Sisa Waktu)</h4>
@@ -60,6 +60,9 @@ else{
           </div>
         </div>
       </div>
+    </div>
+    <div class="col-md-3">
+      
     </div>
      <!-- soal -->
     <div class="col-md-9">
@@ -109,12 +112,12 @@ else{
                     <div class="row">
                       <div class="col-md-3">
                         <div class="form-group">
-                          <input type="text" name="jawaban1[<?php echo $id;?>]" value="" class="form-control"  placeholder="">
+                          <input type="text" name="jawaban1[<?php echo $id;?>]" value="" class="form-control"  placeholder="" autocomplete="off" onkeypress='validate(event)'>
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
-                          <input type="text" name="jawaban2[<?php echo $id;?>]" value="" class="form-control"  placeholder="">
+                          <input type="text" name="jawaban2[<?php echo $id;?>]" value="" class="form-control"  placeholder="" autocomplete="off" onkeypress='validate(event)'>
                         </div>
                       </div>
                     </div>
@@ -891,6 +894,32 @@ else{
 
 <?php include 'templates/footer.php'; ?>
 
+
+<!-- fungsi validasi angka dan operator mtk -->
+<script>
+  function validate(evt) {
+  var theEvent = evt || window.event;
+
+    // Handle paste
+    if (theEvent.type === 'paste') {
+        key = event.clipboardData.getData('text/plain');
+    } else {
+    // Handle key press
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+    }
+    var regex = /[0-9+-/*]|\./;
+    if( !regex.test(key) ) {
+      theEvent.returnValue = false;
+      if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+  }
+</script>
+<!-- fungsi validasi angka dan operator mtk -->
+
+
+
+
 <!-- Script Wizard -->
     <!-- <script type="text/javascript">
     $(document).ready(function() {
@@ -930,7 +959,7 @@ else{
                   setTimeout(hitung,1000);
     
                  /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
-                 if(menit < 5 && jam == 0){
+                 if(menit < 2 && jam == 0){
                        var peringatan = 'style="color:red"';
                  };
    

@@ -24,7 +24,7 @@ else{
         $telah_berlalu      = 0;
     } 
  
-    $temp_waktu = (0.5*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (6*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -48,7 +48,7 @@ else{
 
   <div class="card-deck  px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <!-- timer -->
-     <div class="col-md-3">
+     <div class="col-md-3" id="timer-posisi">
        <div class="card mb-4 shadow-sm">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal text-center">Timer (Sisa Waktu)</h4>
@@ -61,6 +61,9 @@ else{
           </div>
         </div>
       </div>
+    </div>
+    <div class="col-md-3">
+       
     </div>
      <!-- soal -->
     <div class="col-md-9">
@@ -273,7 +276,7 @@ else{
                 setTimeout(hitung,1000);
   
                 /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
-                if(menit < 10 && jam == 0){
+                if(menit < 2 && jam == 0){
                     var peringatan = 'style="color:red"';
                 };
   

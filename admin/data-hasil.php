@@ -26,7 +26,7 @@
               </ul> -->
 
                 <div class="tab-pane active" id="nilai1">
-                  <div class="box box-default">
+                  <div class="box box-primary">
                     <div class="box-header with-border">
                       <h3 class="box-title ">Data Hasil Tes Peserta</h3>
 
@@ -40,9 +40,9 @@
                           </div>
                         </div>
                       </div> -->
-                        <div class="tombol-kanan">
-          
-                        </div>
+                       <!--  <div class="tombol-kanan">
+                            <a href="export.php" class="btn btn-default btn-sm ">&nbsp;<i class="fa fa-download"></i>&nbsp; Download&nbsp;</a>
+                        </div> -->
                     </div>
                    
                     <!-- /.box-header -->
@@ -81,7 +81,7 @@
                       
                           <td class="align-middle text-center">
                          
-                            <a href="1.php?id_user=<?= $row['id_user']; ?>"
+                            <a href="lihat-hasil.php?id_user=<?= $row['id_user']; ?>"
                              class="btn btn-primary btn-sm">&nbsp;<i class="fa fa-lg  fa-eye"></i> Lihat</a>
                           </td>
                           
@@ -117,7 +117,7 @@
         <!-- END CUSTOM TABS -->
 
 
-      </div>
+      <!-- </div> -->
       <!-- /.col -->
     </div>
     <!-- /.row -->

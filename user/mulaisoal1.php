@@ -46,15 +46,16 @@ include '../config/koneksi.php';
 
 
       if ($jawaban == $jwb_benar) {
-        $alert = '<div class="alert alert-success" role="alert">
-                    <center>Jawaban anda benar, karena 1 + 1 adalah 2 , anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
-                  </div>';
-         $tombol = '<a href="soal1.php" class="btn btn-success">Mulai</a>';
-
+        // $alert = '<div class="alert alert-success" role="alert">
+        //             <center>Jawaban anda benar, karena 1 + 1 adalah 2 , anda bisa lanjut dan langsung mengerjakan soal dengan menekan tombol mulai dibawah .</center>
+        //           </div>';
+        //  $tombol = '<a href="soal1.php" class="btn btn-success">Mulai</a>';
+        echo "<script language='javascript'> window.location = 'soal1.php';</script>"; 
+        
       } else {
         $alert = '<div class="alert alert-danger" role="alert">
-                    <center>Jawaban anda salah, karena 1 + 1 bukan '.$jawaban
-                  .' , coba lagi !</center></div>';
+                    <center>Jawaban anda salah, karena 1 + 1 bukan '.$jawaban.
+                  ' , coba lagi !</center></div>';
       }
       
 
@@ -69,11 +70,11 @@ include '../config/koneksi.php';
        Petunjuk Pengerjaan Tes 1
       </div>
       <div class="card-body">
-        <p class="lead">Test berikut adalah test hitungan. <br> Tugas Anda mudah Anda hanya tinggal mengerjakan soal hitungan tersebut. <br> Anda tidak diperkenankan untuk mengunakan alat bantu hitung. <br> Kerjakan secepat mungkin sebelum waktunya selesai.</p>
+        <p class="lead">Test berikut adalah test hitungan. <br> Tugas Anda mudah Anda hanya tinggal mengerjakan soal hitungan tersebut. <br> Anda tidak diperkenankan untuk mengunakan alat bantu hitung digital seperti kalkulator, Hp dll. <br> Waktu pengerjaan <b>15 menit</b> <br> Kerjakan secepat mungkin sebelum waktunya selesai.</p>
       </div>
       <div class="card-footer text-muted">
         <!-- Large modal -->
-        <?= @$tombol; ?>
+        <!-- <?= @$tombol; ?> -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Latihan</button>
 
        <!-- <a href="soal1.php" class="btn btn-primary">Mulai</a> -->
@@ -128,7 +129,8 @@ include '../config/koneksi.php';
                   </table>
                   <tr>
                     <div class="form-group pl-md-5 pr-3">
-                      <input type="text" name="jawaban" value="" class="form-control"  placeholder="Jawab disini">
+                      <input type="text" onkeypress='validate(event)' name="jawaban" value="" class="form-control"  placeholder="Jawab disini" autocomplete="off" >
+                      <!-- onkeypress='validate(event)' -->
                     </div>
                   </tr>
                 </div>
@@ -168,7 +170,30 @@ function timestamp() {
     },
   });
 }
+
 </script>
+
+<!-- fungsi validasi angka dan operator mtk hanya angka tidak abjad  -->
+<script>
+  function validate(evt) {
+  var theEvent = evt || window.event;
+
+    // Handle paste
+    if (theEvent.type === 'paste') {
+        key = event.clipboardData.getData('text/plain');
+    } else {
+    // Handle key press
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+    }
+    var regex = /[0-9+-/*]|\./;
+    if( !regex.test(key) ) {
+      theEvent.returnValue = false;
+      if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+  }
+</script>
+<!-- fungsi validasi angka dan operator mtk -->
 
 <!-- hide/show button -->
 <!-- <script>

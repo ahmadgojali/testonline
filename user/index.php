@@ -17,7 +17,7 @@ include '../config/koneksi.php';
 
 <?php include 'templates/navbar.php'; ?>
 
-<div class="float-right mt-3 mr-5">
+<div class="float-right mt-3 mr-5" id="posisi">
   <a class="btn btn-outline-primary" href="#" id="timestamp"></a>
 </div>
 

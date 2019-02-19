@@ -5,7 +5,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; 2018 <a href="https://www.arwanacitra.com/" target="_blank">Arwana Citramulia</a>.</strong> All rights
+    <strong>Copyright &copy; 2019 <a href="https://www.arwanacitra.com/" target="_blank">Arwana Citramulia</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -17,10 +17,12 @@
   </aside>
   <div class="control-sidebar-bg"></div>
 
+
 <!-- Scroll to Top Button-->
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-circle-up fa-lg"></i>
   <!-- <span class="glyphicon glyphicon-chevron-up"></span> -->
 </a>
+
 
 <!-- jQuery 2.2.3 -->
 <script src="../assets2/plugins/jQuery/jquery-2.2.3.min.js"></script>
@@ -36,12 +38,78 @@
 <script src="../assets2/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="../assets2/plugins/datatables/dataTables.bootstrap.min.js"></script>
 
+<!-- password -->
+<script src="../assets/dist/password.js"></script>
+
+
 <script language="JavaScript" type="text/JavaScript">
   function MM_jumpMenu(targ,selObj,restore){ //v3.0
     eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
     if (restore) selObj.selectedIndex=0;
   }
 </script>
+
+
+<!-- function generate password javascript -->
+<script>
+    function generate( length = 10 ){
+      var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var lowercase = 'abcdefghijklmnopqrstuvwxyz';
+      var numbers   = '0123456789';
+      var symbols   = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
+
+      var all = uppercase + lowercase + numbers ;
+
+      var password = '';
+
+      for (var index = 0; index < length; index++) {
+          var character = Math.floor(Math.random() * all.length);
+          password += all.substring(character, character + 1);
+      }
+
+      return password;
+  }
+</script>
+<!-- function generate password javascript -->
+
+<!-- generate password dengan button -->
+<script>
+    window.onload = function (){
+      var generateButton = document.querySelector('#generate');
+      generateButton.addEventListener('click', function(){        
+        document.querySelector('#password').value = generate();
+      });
+    }
+</script>
+<!-- generate password dengan button -->
+
+<!-- generate password dengan keypress texbox username -->
+<script>
+    window.onload = function (){
+      var generateButton = document.querySelector('#username');
+      generateButton.addEventListener('keypress', function(){        
+        document.querySelector('#password').value = generate();
+      });
+    }
+</script>
+<!-- generate password dengan keypress texbox username -->
+
+
+<!-- toggle hide/show -->
+  <script>
+    $(document).ready(function(){
+      $("#tampil").hide();
+    });
+  </script>
+
+  <script>
+    $(document).ready(function(){
+      $("#lihat").click(function(){
+        $("#tampil").toggle();
+      });
+    });
+  </script>
+  <!-- toggle hide/show -->
 
  <!-- back-to-top -->
   <script>
@@ -82,6 +150,7 @@
   });
 </script>
 <!-- Page script -->
+
 <script>
   $(function () {
   
@@ -163,6 +232,8 @@
     $("#compose-textarea").wysihtml5();
   });
 </script>
+
+
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="../assets2/plugins/morris/morris.min.js"></script>

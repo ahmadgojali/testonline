@@ -1,0 +1,30 @@
+ html{
+  position: relative;
+}
+
+ body{
+  /*margin-bottom:100px;*/
+  /*margin-top: 30px; */
+}
+
+  /*#navbar-posisi{*/
+  /*width:100%;*/ /*supaya header memenuhi layar*/
+  /*z-index:1000;*/ /*z-index dgn nilai besar berfungsi supaya header selalu tampil didepan*/
+/*  position:fixed;*/
+ /* height:60px; 
+  background:#252525;*/
+ /* }*/
+
+  #timer-posisi{
+  /*width:100%; supaya header memenuhi layar*/
+  z-index:1000; /*z-index dgn nilai besar berfungsi supaya header selalu tampil didepan*/
+  position:fixed;
+  /*margin-top: 50px;*/
+ /* height:60px; 
+  background:#252525;*/
+  }
+
+  /*#posisi{
+    position: relative;
+    margin-top: 50px;
+  }*/

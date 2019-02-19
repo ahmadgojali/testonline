@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Arwana Citramulia</title>
+  <link rel="shortcut icon" href="../assets/img/arna-logo.png">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   
   <!-- <link rel="stylesheet" href="../assets/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="../assets/dist/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/dist/pricing.css">
+  <link rel="stylesheet" href="../assets/dist/style.css">
   <!-- <link rel="stylesheet" href="../assets/dist/sigin.css"> -->
 
   <!-- <link rel="stylesheet" href="pricing.css"> -->

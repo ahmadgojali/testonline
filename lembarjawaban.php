@@ -1,3 +1,4 @@
+
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -5,11 +6,12 @@ xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="LembarJawabanFIX(00000003)_files/filelist.xml">
+<link rel=File-List
+href="Lembar%20Jawaban%20FIX%20(00000003)_files/filelist.xml">
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -22,11 +24,11 @@ w\:* {behavior:url(#default#VML);}
   <o:Author>HRD</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Arwana</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>98</o:TotalTime>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
   <o:LastPrinted>2019-01-30T09:16:00Z</o:LastPrinted>
-  <o:Created>2019-02-15T06:17:00Z</o:Created>
-  <o:LastSaved>2019-02-15T06:17:00Z</o:LastSaved>
+  <o:Created>2019-02-18T01:48:00Z</o:Created>
+  <o:LastSaved>2019-02-18T01:48:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
   <o:Words>126</o:Words>
   <o:Characters>724</o:Characters>
@@ -36,13 +38,12 @@ w\:* {behavior:url(#default#VML);}
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
-<link rel=themeData href="LembarJawabanFIX(00000003)_files/themedata.thmx">
+<link rel=themeData
+href="Lembar%20Jawaban%20FIX%20(00000003)_files/themedata.thmx">
 <link rel=colorSchemeMapping
-href="LembarJawabanFIX(00000003)_files/colorschememapping.xml">
+href="Lembar%20Jawaban%20FIX%20(00000003)_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:PunctuationKerning/>
@@ -874,16 +875,16 @@ span.BalloonTextChar
 	line-height:115%;}
  /* Page Definitions */
  @page
-	{mso-footnote-separator:url("LembarJawabanFIX\(00000003\)_files/header.htm") fs;
-	mso-footnote-continuation-separator:url("LembarJawabanFIX\(00000003\)_files/header.htm") fcs;
-	mso-endnote-separator:url("LembarJawabanFIX\(00000003\)_files/header.htm") es;
-	mso-endnote-continuation-separator:url("LembarJawabanFIX\(00000003\)_files/header.htm") ecs;}
+	{mso-footnote-separator:url("Lembar%20Jawaban%20FIX%20\(00000003\)_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("Lembar%20Jawaban%20FIX%20\(00000003\)_files/header.htm") fcs;
+	mso-endnote-separator:url("Lembar%20Jawaban%20FIX%20\(00000003\)_files/header.htm") es;
+	mso-endnote-continuation-separator:url("Lembar%20Jawaban%20FIX%20\(00000003\)_files/header.htm") ecs;}
 @page WordSection1
 	{size:8.5in 11.0in;
 	margin:1.0in 1.0in 1.0in 1.0in;
 	mso-header-margin:.5in;
 	mso-footer-margin:.5in;
-	mso-header:url("LembarJawabanFIX\(00000003\)_files/header.htm") h1;
+	mso-header:url("Lembar%20Jawaban%20FIX%20\(00000003\)_files/header.htm") h1;
 	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
@@ -1099,328 +1100,340 @@ table.MsoTableGrid
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>Test 1</p>
 
+<!-- tabel1 -->
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid black .5pt;
  mso-border-themecolor:text1;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>1</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>67</p>
-  </td>
-  <td width=30 valign=top style='width:22.5pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>7</p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>6</p>
-  </td>
-  <td width=36 valign=top style='width:27.0pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>13</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>4.100</p>
-  </td>
-  <td width=42 valign=top style='width:31.5pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>19</p>
-  </td>
-  <td width=84 valign=top style='width:63.0pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>7</p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
-  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>2</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>8</p>
-  </td>
-  <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>8</p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>15</p>
-  </td>
-  <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>14</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>80</p>
-  </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>20</p>
-  </td>
-  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>1500</p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
-  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>3</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>1</m:r></span></i></m:num><m:den><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-  style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-  mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
-  EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
-   coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
-   filled="f" stroked="f">
-   <v:stroke joinstyle="miter"/>
-   <v:formulas>
-    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-    <v:f eqn="sum @0 1 0"/>
-    <v:f eqn="sum 0 0 @1"/>
-    <v:f eqn="prod @2 1 2"/>
-    <v:f eqn="prod @3 21600 pixelWidth"/>
-    <v:f eqn="prod @3 21600 pixelHeight"/>
-    <v:f eqn="sum @0 0 1"/>
-    <v:f eqn="prod @6 1 2"/>
-    <v:f eqn="prod @7 21600 pixelWidth"/>
-    <v:f eqn="sum @8 21600 0"/>
-    <v:f eqn="prod @7 21600 pixelHeight"/>
-    <v:f eqn="sum @10 21600 0"/>
-   </v:formulas>
-   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
-   <o:lock v:ext="edit" aspectratio="t"/>
-  </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:6pt;
-   height:27pt'>
-   <v:imagedata src="LembarJawabanFIX(00000003)_files/image001.png" o:title=""
-    chromakey="white"/>
-  </v:shape><![endif]--><![if !vml]><img width=8 height=36
-  src="LembarJawabanFIX(00000003)_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
-  </td>
-  <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>9</p>
-  </td>
-      <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
-      border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-      border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-      solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+ <!-- baris 1/no1 -->
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <!-- kolom no 1 -->
+      <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
+          mso-border-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+          text1;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>1</p>
+      </td>
+      <!-- kol kunci jaw no1 -->
+      <td width=72 valign=top style='width:.75in;border:solid black 1.0pt;
+          mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+          mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+          text1;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>67</p>
+      </td>
+
+      <!-- kolom no 7 -->
+      <td width=30 valign=top style='width:22.5pt;border:solid black 1.0pt;
+          mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+          mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+          text1;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>7</p>
+      </td>
+      <td width=78 valign=top style='width:58.5pt;border:solid black 1.0pt;
+          mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+          mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+          text1;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>6</p>
+      </td>
+
+      <!-- kolom no 13 -->
+      <td width=36 valign=top style='width:27.0pt;border:solid black 1.0pt;
+          mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+          mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+          text1;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>13</p>
+      </td>
+      <td width=72 valign=top style='width:.75in;border:solid black 1.0pt;
+          mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+          mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+          text1;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>4.100</p>
+      </td>
+
+      <!-- kolom no19 -->
+      <td width=42 valign=top style='width:31.5pt;border:solid black 1.0pt;
+          mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+          mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+          text1;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>19</p>
+      </td>
+      <td width=84 valign=top style='width:63.0pt;border:solid black 1.0pt;
+      mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
       mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
       text1;padding:0in 5.4pt 0in 5.4pt'>
       <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-      normal'>30.000</p>
+      normal'>7</p>
       </td>
-  <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>15</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:num><m:den><m:sSup><m:sSupPr><span
+   </tr>
+   <!-- baris 1/no1 -->
+
+   <tr style='mso-yfti-irow:1'>
+    <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
+    mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+    mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>2</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>8</p>
+    </td>
+    <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>8</p>
+    </td>
+    <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>15</p>
+    </td>
+    <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>14</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>80</p>
+    </td>
+    <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>20</p>
+    </td>
+    <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>1500</p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
+    mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+    mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>3</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
         style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
         mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
         mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-        normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+        normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+        normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+        "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>1</m:r></span></i></m:num><m:den><i
         style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>X</m:r></span></i></m:e><m:sup><i
-        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:sup></m:sSup><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>+9</m:r></span></i></m:den></m:f><i
-    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>/
-     -</m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
-      mso-ascii-font-family:"Cambria Math";mso-fareast-font-family:"Times New Roman";
-      mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:"Cambria Math";
-      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>6</m:r></span></i></m:num><m:den><m:sSup><m:sSupPr><span
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+    style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+    minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+    EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+     coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+     filled="f" stroked="f">
+     <v:stroke joinstyle="miter"/>
+     <v:formulas>
+      <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+      <v:f eqn="sum @0 1 0"/>
+      <v:f eqn="sum 0 0 @1"/>
+      <v:f eqn="prod @2 1 2"/>
+      <v:f eqn="prod @3 21600 pixelWidth"/>
+      <v:f eqn="prod @3 21600 pixelHeight"/>
+      <v:f eqn="sum @0 0 1"/>
+      <v:f eqn="prod @6 1 2"/>
+      <v:f eqn="prod @7 21600 pixelWidth"/>
+      <v:f eqn="sum @8 21600 0"/>
+      <v:f eqn="prod @7 21600 pixelHeight"/>
+      <v:f eqn="sum @10 21600 0"/>
+     </v:formulas>
+     <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+     <o:lock v:ext="edit" aspectratio="t"/>
+    </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:6pt;
+     height:27pt'>
+     <v:imagedata src="Lembar%20Jawaban%20FIX%20(00000003)_files/image001.png"
+      o:title="" chromakey="white"/>
+    </v:shape><![endif]--><![if !vml]><img width=8 height=36
+    src="Lembar%20Jawaban%20FIX%20(00000003)_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+    </td>
+    <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>9</p>
+    </td>
+    <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>30.000</p>
+    </td>
+    <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>15</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:f><m:fPr><span
         style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
         mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
         mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-        normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+        normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+        normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+        "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:num><m:den><m:sSup><m:sSupPr><span
+          style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+          mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+          mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+          normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+          style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+          mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>X</m:r></span></i></m:e><m:sup><i
+          style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+          mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:sup></m:sSup><i
         style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>X</m:r></span></i></m:e><m:sup><i
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>+9</m:r></span></i></m:den></m:f><i
+      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>/
+       -</m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
+        mso-ascii-font-family:"Cambria Math";mso-fareast-font-family:"Times New Roman";
+        mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:"Cambria Math";
+        font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i
         style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:sup></m:sSup><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>9</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-  style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-  mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
-  EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
-   type="#_x0000_t75" style='width:91.5pt;height:27pt'>
-   <v:imagedata src="LembarJawabanFIX(00000003)_files/image003.png" o:title=""
-    chromakey="white"/>
-  </v:shape><![endif]--><![if !vml]><img width=122 height=36
-  src="LembarJawabanFIX(00000003)_files/image004.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
-  </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>21</p>
-  </td>
-  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>150</p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
-  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>4</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>1</m:r></span></i></m:num><m:den><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-  style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-  mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
-  EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
-   type="#_x0000_t75" style='width:6pt;height:27pt'>
-   <v:imagedata src="LembarJawabanFIX(00000003)_files/image001.png" o:title=""
-    chromakey="white"/>
-  </v:shape><![endif]--><![if !vml]><img width=8 height=36
-  src="LembarJawabanFIX(00000003)_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
-  </td>
-  <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>6</m:r></span></i></m:num><m:den><m:sSup><m:sSupPr><span
+          style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+          mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+          mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+          normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+          style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+          mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>X</m:r></span></i></m:e><m:sup><i
+          style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+          mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:sup></m:sSup><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>-</m:r><m:r>9</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+    style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+    minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+    EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+     type="#_x0000_t75" style='width:91.5pt;height:27pt'>
+     <v:imagedata src="Lembar%20Jawaban%20FIX%20(00000003)_files/image003.png"
+      o:title="" chromakey="white"/>
+    </v:shape><![endif]--><![if !vml]><img width=122 height=36
+    src="Lembar%20Jawaban%20FIX%20(00000003)_files/image004.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+    </td>
+    <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>21</p>
+    </td>
+    <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>150</p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
+    mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+    mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>4</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+        normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+        "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>1</m:r></span></i></m:num><m:den><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+    style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+    minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+    EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+     type="#_x0000_t75" style='width:6pt;height:27pt'>
+     <v:imagedata src="Lembar%20Jawaban%20FIX%20(00000003)_files/image001.png"
+      o:title="" chromakey="white"/>
+    </v:shape><![endif]--><![if !vml]><img width=8 height=36
+    src="Lembar%20Jawaban%20FIX%20(00000003)_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+    </td>
+    <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
     border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
     border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
     solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
@@ -1428,265 +1441,266 @@ table.MsoTableGrid
     text1;padding:0in 5.4pt 0in 5.4pt'>
     <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
     normal'>10</p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>285</p>
-  </td>
-  <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>16</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>25</p>
-  </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><o:p>&nbsp;</o:p></p>
-  </td>
-  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><o:p>&nbsp;</o:p></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:4'>
-  <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
-  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>5</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>5</m:r></span></i></m:num><m:den><i
+    </td>
+    <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>285</p>
+    </td>
+    <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>16</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>25</p>
+    </td>
+    <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><o:p>&nbsp;</o:p></p>
+    </td>
+    <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><o:p>&nbsp;</o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
+    mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+    mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>5</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+        normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+        "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>5</m:r></span></i></m:num><m:den><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+    style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+    minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+    EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+     type="#_x0000_t75" style='width:6pt;height:27pt'>
+     <v:imagedata src="Lembar%20Jawaban%20FIX%20(00000003)_files/image005.png"
+      o:title="" chromakey="white"/>
+    </v:shape><![endif]--><![if !vml]><img width=8 height=36
+    src="Lembar%20Jawaban%20FIX%20(00000003)_files/image006.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+    </td>
+    <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>11</p>
+    </td>
+    <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>625</p>
+    </td>
+    <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>17</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>0</p>
+    </td>
+    <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><o:p>&nbsp;</o:p></p>
+    </td>
+    <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><o:p>&nbsp;</o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+    <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
+    mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+    mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>6</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+        normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+        "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>3</m:r></span></i></m:num><m:den><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:den></m:f><i
       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>6</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-  style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-  mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
-  EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
-   type="#_x0000_t75" style='width:6pt;height:27pt'>
-   <v:imagedata src="LembarJawabanFIX(00000003)_files/image005.png" o:title=""
-    chromakey="white"/>
-  </v:shape><![endif]--><![if !vml]><img width=8 height=36
-  src="LembarJawabanFIX(00000003)_files/image006.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
-  </td>
-  <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>11</p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>625</p>
-  </td>
-  <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>17</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>0</p>
-  </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><o:p>&nbsp;</o:p></p>
-  </td>
-  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><o:p>&nbsp;</o:p></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
-  <td width=25 valign=top style='width:18.9pt;border:solid black 1.0pt;
-  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
-  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>6</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>3</m:r></span></i></m:num><m:den><i
+      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>/1</m:r></span></i><m:f><m:fPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+        normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+        "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>1</m:r></span></i></m:num><m:den><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:den></m:f><i
       style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:den></m:f><i
-    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>/1</m:r></span></i><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>1</m:r></span></i></m:num><m:den><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>2</m:r></span></i></m:den></m:f><i
-    style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-    mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>
-     </m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-  style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-  mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
-  EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
-   type="#_x0000_t75" style='width:30pt;height:27pt'>
-   <v:imagedata src="LembarJawabanFIX(00000003)_files/image007.png" o:title=""
-    chromakey="white"/>
-  </v:shape><![endif]--><![if !vml]><img width=40 height=36
-  src="LembarJawabanFIX(00000003)_files/image008.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
-  </td>
-  <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>12</p>
-  </td>
-  <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
-      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-      mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-      normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
-      normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
-      "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>11</m:r></span></i></m:num><m:den><i
-      style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
-      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>18</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
-  style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-  mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
-  EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
-   type="#_x0000_t75" style='width:12pt;height:27pt'>
-   <v:imagedata src="LembarJawabanFIX(00000003)_files/image009.png" o:title=""
-    chromakey="white"/>
-  </v:shape><![endif]--><![if !vml]><img width=16 height=36
-  src="LembarJawabanFIX(00000003)_files/image010.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
-  </td>
-  <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>18</p>
-  </td>
-  <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>700</p>
-  </td>
-  <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><o:p>&nbsp;</o:p></p>
-  </td>
-  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
-  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
-  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
-  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
-  text1;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><o:p>&nbsp;</o:p></p>
-  </td>
- </tr>
+      mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>
+       </m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+    style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+    minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+    EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+     type="#_x0000_t75" style='width:30pt;height:27pt'>
+     <v:imagedata src="Lembar%20Jawaban%20FIX%20(00000003)_files/image007.png"
+      o:title="" chromakey="white"/>
+    </v:shape><![endif]--><![if !vml]><img width=40 height=36
+    src="Lembar%20Jawaban%20FIX%20(00000003)_files/image008.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+    </td>
+    <td width=30 valign=top style='width:22.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>12</p>
+    </td>
+    <td width=78 valign=top style='width:58.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><!--[if gte msEquation 12]><m:oMathPara><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr><m:oMath><m:f><m:fPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+        mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+        normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i style='mso-bidi-font-style:
+        normal'><span style='font-family:"Cambria Math",serif;mso-fareast-font-family:
+        "Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>11</m:r></span></i></m:num><m:den><i
+        style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+        mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><m:r>18</m:r></span></i></m:den></m:f></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+    style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+    minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+    EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+     type="#_x0000_t75" style='width:12pt;height:27pt'>
+     <v:imagedata src="Lembar%20Jawaban%20FIX%20(00000003)_files/image009.png"
+      o:title="" chromakey="white"/>
+    </v:shape><![endif]--><![if !vml]><img width=16 height=36
+    src="Lembar%20Jawaban%20FIX%20(00000003)_files/image010.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+    </td>
+    <td width=36 valign=top style='width:27.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>18</p>
+    </td>
+    <td width=72 valign=top style='width:.75in;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'>700</p>
+    </td>
+    <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><o:p>&nbsp;</o:p></p>
+    </td>
+    <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+    border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+    border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+    solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+    mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+    text1;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+    normal'><o:p>&nbsp;</o:p></p>
+    </td>
+   </tr>
 </table>
+<!-- tabel 1 -->
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -2988,10 +3002,10 @@ table.MsoTableGrid
   mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
   EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
    type="#_x0000_t75" style='width:57pt;height:27pt'>
-   <v:imagedata src="LembarJawabanFIX(00000003)_files/image011.png" o:title=""
-    chromakey="white"/>
+   <v:imagedata src="Lembar%20Jawaban%20FIX%20(00000003)_files/image011.png"
+    o:title="" chromakey="white"/>
   </v:shape><![endif]--><![if !vml]><img width=76 height=36
-  src="LembarJawabanFIX(00000003)_files/image012.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
+  src="Lembar%20Jawaban%20FIX%20(00000003)_files/image012.gif" v:shapes="_x0000_i1025"><![endif]></span><![endif]></p>
   </td>
   <td width=42 valign=top style='width:31.5pt;border-top:none;border-left:none;
   border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
@@ -3107,7 +3121,7 @@ table.MsoTableGrid
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>Test 4<span
-style='mso-tab-count:6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Test
+style='mso-tab-count:6'>                                                                                    </span>Test
 5</p>
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 align=left
@@ -3520,4 +3534,3 @@ style='mso-tab-count:6'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 </body>
 
 </html>
-
