@@ -25,7 +25,7 @@ else{
     } 
     
     //ubah waktu disini
-    $temp_waktu = (15*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
+    $temp_waktu = (0.5*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
     $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
     $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
      
@@ -156,10 +156,10 @@ else{
                <?php var_dump($pilihan_c) ?>
                <?php var_dump($pilihan_d) ?> -->
 
-           <!--  <input type="hidden" id="jmrows" value="<?=$num_rows?>">             
+            <input type="hidden" id="jmrows" value="<?=$num_rows?>">             
             <div class="float-right mr-md-5 mb-3">
-               <input type="submit" name="submit" id="submit" class="btn btn-success" value="Simpan">
-            </div> -->
+               <input type="submit" name="simpan" id="simpan" class="btn btn-success" value="NEXT">
+            </div>
           </form>   
         </div>
       </div>

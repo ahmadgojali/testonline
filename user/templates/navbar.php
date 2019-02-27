@@ -1,5 +1,5 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-1 bg-white border-bottom shadow-sm" id="navbar-posisi">
-  <h5 class="my-0 ml-md-4 mr-md-auto font-weight-normal">Arwana Citramulia <!-- <img src="../assets/img/arna-logo.png" alt="" width="100px" height="70px"> --></h5>
+  <h5 class="my-0 ml-md-4 mr-md-auto font-weight-normal"><!-- Arwana Citramulia --> <img src="../assets/img/arna-logo.png" alt="" width="158px" height="35px"></h5>
   <!-- Arwana Citramulia  -->
 
 
